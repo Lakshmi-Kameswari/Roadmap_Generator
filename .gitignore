@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.env
+
+# Environments and Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and Systems
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Agent Temporary / Cache files
+.agents/
+.system_generated/
+/implementation_plan.md
+/walkthrough.md
+/task.md
+/scratch/
