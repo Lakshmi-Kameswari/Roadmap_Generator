@@ -15,7 +15,7 @@ app = FastAPI(title="SkillPath AI Backend API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, specify frontend URL
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
