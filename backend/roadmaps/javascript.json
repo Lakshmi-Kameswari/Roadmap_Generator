@@ -1,0 +1,114 @@
+{
+  "skill_name": "JavaScript",
+  "estimated_duration": "3 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Proficient JavaScript developer capable of writing modern ES6+ scripts, handling asynchronous flows, manipulating the DOM, and designing interactive dynamic web applications.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Basic Programming Concepts",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Syntax & Variable Declarations",
+          "subtopics": ["Variables (let, const, var)", "Data Types (Primitives vs Objects)", "Strict mode", "Console printing"]
+        },
+        {
+          "name": "Operators & Conditional Logic",
+          "subtopics": ["Arithmetic & Logical Operators", "Comparison & Equality (== vs ===)", "If-Else conditions", "Switch statements", "Ternary Operators"]
+        },
+        {
+          "name": "Loops & Iterations",
+          "subtopics": ["For loop", "While & Do-While loops", "Break & Continue", "Looping through Arrays"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily coding basic functions and conditionals on sites like Edabit or freeCodeCamp.",
+      "mini_project": {
+        "title": "Temperature Converter",
+        "description": "A web interface script that converts Celsius to Fahrenheit and Kelvin dynamically based on user input."
+      },
+      "milestone": "Mastery of JavaScript syntax rules, variables, control flow structures, and basic debugging."
+    },
+    {
+      "phase_title": "Phase 2: Functions, Objects & Arrays",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Functions & Scope",
+          "subtopics": ["Function declarations vs expressions", "Arrow Functions", "Parameters & Rest parameters", "Global, Local & Block scope", "IIFE"]
+        },
+        {
+          "name": "Arrays & Methods",
+          "subtopics": ["Array manipulation (push, pop, shift, unshift)", "Iterative methods (map, filter, reduce, forEach)", "Slicing and splicing"]
+        },
+        {
+          "name": "Objects & JSON",
+          "subtopics": ["Object properties and methods", "Object destructuring & Spread operator", "JSON parsing and stringifying"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing data sorting algorithms and array mapping utilities.",
+      "mini_project": {
+        "title": "Shopping Cart Calculator",
+        "description": "Build an algorithm that processes a list of products, filters out of stock items, sums prices, and applies taxes/coupons."
+      },
+      "milestone": "Proficient in manipulating data collections using array iterators and configuring nested objects."
+    },
+    {
+      "phase_title": "Phase 3: DOM Manipulation & Web APIs",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Accessing & Modifying DOM Elements",
+          "subtopics": ["querySelector & getElementById", "Creating/removing nodes", "Modifying styles and classes", "Attribute manipulation"]
+        },
+        {
+          "name": "Events Handling",
+          "subtopics": ["Event Listeners (click, input, submit)", "Event Propagation (Bubbling & Capturing)", "PreventDefault & StopPropagation"]
+        },
+        {
+          "name": "Storage APIs",
+          "subtopics": ["LocalStorage", "SessionStorage", "Cookies API"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily building dynamic interactive layout widgets.",
+      "mini_project": {
+        "title": "Interactive Todo App",
+        "description": "Create a fully functional interactive Todo application with checkboxes, filters, item edits, and state persistence in LocalStorage."
+      },
+      "milestone": "Capable of building interactive UI states that respond to user clicks, keys, and persist selections across refreshes."
+    },
+    {
+      "phase_title": "Phase 4: Advanced & Asynchronous JS",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Asynchronous JS Concepts",
+          "subtopics": ["Callstack & Event Loop", "Callbacks and Callback Hell", "Promises (.then, .catch, .finally)"]
+        },
+        {
+          "name": "Modern Async Flows",
+          "subtopics": ["Async / Await syntax", "Error handling in async functions", "Fetch API client calls"]
+        },
+        {
+          "name": "Prototypes & ES6 Classes",
+          "subtopics": ["Prototype inheritance", "Class keyword, constructor, and methods", "Getters and Setters"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing HTTP fetch requests and structuring classes.",
+      "mini_project": {
+        "title": "Weather API Application",
+        "description": "Fetch real-time weather details from a public API, map current conditions to custom background graphics, and handle loading states."
+      },
+      "milestone": "Mastered asynchronous events flow, fetching server endpoints, and Object-Oriented JavaScript configurations."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Dynamic Music Player Board",
+      "description": "A web audio player interface with play, pause, volume bars, playlist queue loading, and local progress storage using classes and audio Web APIs."
+    },
+    {
+      "title": "Kanban Task Board with Drag & Drop",
+      "description": "Create an interactive task dashboard showing multiple columns where items can be moved, edited, deleted, and synchronized with localStorage."
+    }
+  ]
+}

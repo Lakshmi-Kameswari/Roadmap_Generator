@@ -1,0 +1,114 @@
+{
+  "skill_name": "MERN Stack",
+  "estimated_duration": "4 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent Full-Stack JavaScript Developer capable of building responsive React frontends, robust Node/Express backends, structuring databases in MongoDB, and deploying applications.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Frontend - React Fundamentals",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Modern JavaScript & React Intro",
+          "subtopics": ["ES6 features (Destructuring, Spreads, Arrow functions, Modules)", "Vite toolchain setup", "JSX and Components render hierarchy"]
+        },
+        {
+          "name": "State Management & Events",
+          "subtopics": ["useState for local storage state", "useEffect for API calling and cleanup", "Handling events and forms", "Component Props passing"]
+        },
+        {
+          "name": "Routing & Context API",
+          "subtopics": ["React Router for page navigation", "UseContext for global settings (e.g. auth, dark mode)", "Tailwind CSS installation and utilities"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily building small UI widgets and calling external public API endpoints.",
+      "mini_project": {
+        "title": "Crypto Tracker Dashboard",
+        "description": "A responsive React SPA using Tailwind CSS that fetches cryptocurrency prices from a public API, displays cards, offers filtering, and stores user favorites in context."
+      },
+      "milestone": "Mastered React state, lifecycle hooks, styling layouts, and single-page client routing."
+    },
+    {
+      "phase_title": "Phase 2: Backend - Node.js & Express",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Node.js Basics",
+          "subtopics": ["Node runtime and V8 engine", "CommonJS vs ES Modules", "File System (fs) and Path modules"]
+        },
+        {
+          "name": "Express.js REST APIs",
+          "subtopics": ["Routing, Request & Response objects", "Middleware chain pattern", "Parsing JSON payloads", "CORS handling"]
+        },
+        {
+          "name": "Error Handling & Validation",
+          "subtopics": ["Global error handler middleware", "Schema validation with Joi / Zod", "Environment variables configuration"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing HTTP server routes, custom middlewares, and validating request objects.",
+      "mini_project": {
+        "title": "Contact Book REST Service",
+        "description": "An Express backend with full CRUD operations to manage personal contacts, complete with body validation and query parameter filters."
+      },
+      "milestone": "Proficient in designing web servers, custom middlewares, route groupings, and returning structured API responses."
+    },
+    {
+      "phase_title": "Phase 3: Database - MongoDB & Mongoose",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "NoSQL Database Concepts",
+          "subtopics": ["Document vs Relational structures", "MongoDB Atlas cloud setup", "Compass tool for inspection"]
+        },
+        {
+          "name": "Mongoose ODM",
+          "subtopics": ["Defining Schemas and Models", "Data types and Validations", "Relationships: Embedded vs Referenced (populate)", "CRUD commands via Mongoose"]
+        },
+        {
+          "name": "Authentication & Security",
+          "subtopics": ["Password hashing using bcrypt", "JSON Web Tokens (JWT) sign/verify", "Route protection middlewares"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily mapping collections, configuring references, and setting up auth controllers.",
+      "mini_project": {
+        "title": "Secure Diary API",
+        "description": "An Express REST API linked to MongoDB where users register, log in to receive a JWT, and create password-protected diary logs."
+      },
+      "milestone": "Mastered MongoDB collections, relationships, encryption hashing, and authorization endpoints."
+    },
+    {
+      "phase_title": "Phase 4: Full Stack Integration & Deployment",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Connecting Frontend & Backend",
+          "subtopics": ["Handling HTTP requests with Axios / Fetch", "Login and Session states persistence", "Loading and Error feedback states"]
+        },
+        {
+          "name": "State Management (Redux Toolkit)",
+          "subtopics": ["Store, Slices, and Reducers", "Handling async actions (thunks)", "Accessing state in components"]
+        },
+        {
+          "name": "Deployment",
+          "subtopics": ["Building React project for production", "Serving static build from Express", "Hosting on Render / Vercel / Heroku"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily building full-stack dashboards, connecting databases, and testing hosting configurations.",
+      "mini_project": {
+        "title": "MERN Task Board (Trello clone)",
+        "description": "A full-stack project where users organize tasks in columns (Todo, Doing, Done) with accounts, updates saving to MongoDB, and drag-drop UI support."
+      },
+      "milestone": "Fully competent MERN stack developer able to build secure database projects and host them live."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce Web Application",
+      "description": "A MERN application featuring user auth, product searches and filters, shopping cart persistency, checkout system integration, and an administrator panel to manage inventory and view user order reports."
+    },
+    {
+      "title": "Collaborative Real-time Blog Platform",
+      "description": "A blog website with account authentication, markdown rendering for posts, dynamic comments and liking functionality, tags categorization, and real-time dashboard analytics tracking post views."
+    }
+  ]
+}

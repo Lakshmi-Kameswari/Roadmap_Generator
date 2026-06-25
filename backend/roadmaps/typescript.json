@@ -1,0 +1,98 @@
+{
+  "skill_name": "TypeScript",
+  "estimated_duration": "6 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Competent TypeScript developer with skills in configuring compiler rules, writing safe typed functions, utilizing interfaces and classes, and configuring custom generic utilities.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Basic Types & Configs",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Compiler & Setup",
+          "subtopics": ["TSC configuration (tsconfig.json)", "Strict mode settings", "Typing variables (string, number, boolean)"]
+        },
+        {
+          "name": "Object & Array typings",
+          "subtopics": ["Array types syntax", "Tuple types structures", "Object shapes typings", "Enum declarations"]
+        },
+        {
+          "name": "Union & Literal Types",
+          "subtopics": ["Union operators (|)", "Literal types, aliases (type)", "Any vs Unknown types", "Void vs Never returns"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily typifying variables and arrays, and checking compile errors.",
+      "mini_project": {
+        "title": "Grade Management Utility",
+        "description": "Create a console script calculating student averages utilizing strict array tuples and status enums."
+      },
+      "milestone": "Mastered compiler configurations, types declaration, enums, type aliases, and strict rules."
+    },
+    {
+      "phase_title": "Phase 2: Interfaces & OOP Types",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Interfaces",
+          "subtopics": ["Declaring interfaces", "Optional and readonly attributes", "Extending interfaces", "Interface vs Type aliases"]
+        },
+        {
+          "name": "Classes Typings",
+          "subtopics": ["Parameter properties syntax", "Access modifiers (public, private, protected)", "Abstract class definitions", "Implements keyword binding"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily defining interface layers, extending models, and implementing class outlines.",
+      "mini_project": {
+        "title": "Inventory Management Models",
+        "description": "Establish data interface structures for products, categories, and inventory logs utilizing interfaces and modifiers."
+      },
+      "milestone": "Proficient in structural contracts, class visibility modifiers, and class abstractions."
+    },
+    {
+      "phase_title": "Phase 3: Generics & Utility Types",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Generics",
+          "subtopics": ["Generic functions parameters", "Generic interfaces/classes", "Generic type constraints (extends keyof)"]
+        },
+        {
+          "name": "Utility Types",
+          "subtopics": ["Partial, Readonly, Pick, Omit structures", "Record mapping profiles", "ReturnType utility"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily writing generic list adapters and mapping utilities.",
+      "mini_project": {
+        "title": "Generic API Client Response Wrapper",
+        "description": "Build a simulated fetch utility mapping generic formats and wrapping success/error response shapes."
+      },
+      "milestone": "Mastered writing reusable generic components, manipulating data shapes, and applying utility transformations."
+    },
+    {
+      "phase_title": "Phase 4: Advanced Types & Guarding",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Type Assertions & Guards",
+          "subtopics": ["Type assertion (as type)", "Typeof and Instanceof checks", "Custom Type Predicates (is operator)", "Discriminated Unions"]
+        },
+        {
+          "name": "Integration with React",
+          "subtopics": ["Typing React Props & State", "Event handlers typings", "Context types mapping"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily writing custom type guard functions and typing React components.",
+      "mini_project": {
+        "title": "Secure Settings Dashboard UI Layout",
+        "description": "Create presentational React components with typed props, validation checks, and event types."
+      },
+      "milestone": "Capable of securing runtime models, refining types, and building robust React TypeScript layouts."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Clean Architecture CLI Task Board",
+      "description": "A terminal task program styled with OOP, generic filters, database models, schema validations, and detailed TS configurations."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "skill_name": "Django",
+  "estimated_duration": "2 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent Django developer proficient in MVC/MVT patterns, ORM database modeling, admin panel configurations, and building RESTful APIs using Django REST Framework (DRF).",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Project Setup & MVC/MVT Basics",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Django Settings & Project structure",
+          "subtopics": ["django-admin startproject", "settings.py configurations", "Virtual environment and pip packages settings"]
+        },
+        {
+          "name": "URL Routing & View handlers",
+          "subtopics": ["URL mapping namespaces", "Function-Based Views (FBV) vs Class-Based Views (CBV)", "Handling HttpRequest and returning HttpResponse"]
+        },
+        {
+          "name": "Templates Rendering",
+          "subtopics": ["Django Template Language (DTL) tags", "Template inheritance blocks", "Rendering context variables"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily setting up projects, mapping URL routes, and rendering templates.",
+      "mini_project": {
+        "title": "Corporate Portfolio Website",
+        "description": "Develop a multi-page marketing website with structured layouts, customizable about details, contact forms, and localized page templates."
+      },
+      "milestone": "Mastered Django workspace files, URL routing maps, template inheritance models, and context variables."
+    },
+    {
+      "phase_title": "Phase 2: Database & Django ORM Models",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Django ORM Core",
+          "subtopics": ["Defining Model classes", "Field types (CharField, IntegerField, DateField)", "Model methods and Meta rules"]
+        },
+        {
+          "name": "Migrations & Admin panel",
+          "subtopics": ["makemigrations and migrate commands", "Registering models to admin.py", "Customizing Admin layout lists"]
+        },
+        {
+          "name": "ORM Relationships",
+          "subtopics": ["ForeignKey (One-to-Many)", "OneToOneField relations", "ManyToManyField configurations"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing databases models, generating migrations, and querying databases using Django shell.",
+      "mini_project": {
+        "title": "Blog Publishing Engine",
+        "description": "A database system supporting Posts, Authors profiles, Comments mappings, and categories, complete with admin panel interfaces."
+      },
+      "milestone": "Proficient in model structures, relationship mappings, database migrations, and configuring admin dashboard lists."
+    },
+    {
+      "phase_title": "Phase 3: Form Handling & User Authentication",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Django Forms",
+          "subtopics": ["Forms vs ModelForms", "Form validation rules", "CSRF security protection"]
+        },
+        {
+          "name": "Built-in Auth System",
+          "subtopics": ["User model configurations", "Login, Logout, and Register actions", "Decorators (@login_required, LoginRequiredMixin)"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily scripting validation forms, registration forms, and checking authentication redirections.",
+      "mini_project": {
+        "title": "Private Notes Manager",
+        "description": "Create an application where registered users login, compose formatted notes, filter category types, and edit details."
+      },
+      "milestone": "Able to handle user inputs safely, configure login credentials, and lock routes from public searches."
+    },
+    {
+      "phase_title": "Phase 4: Django REST Framework (DRF)",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "DRF REST APIs",
+          "subtopics": ["DRF installation and settings", "Serializers definition", "APIView and ViewSets controllers", "Token Authentication"]
+        },
+        {
+          "name": "Deployment basics",
+          "subtopics": ["WSGI vs ASGI servers", "Configuring static files (whitenoise)", "Environment settings split"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing serializer models, exposing REST paths, and checking token permissions.",
+      "mini_project": {
+        "title": "Task Planner REST API",
+        "description": "Establish a DRF REST backend containing login endpoints, JWT/Token access permissions, and CRUD operations over task records."
+      },
+      "milestone": "Equipped to convert Django architectures into RESTful API services, secure routes with tokens, and deploy static assets."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Real-Estate Listing Portal with REST & UI",
+      "description": "Build a portal where agents register, post properties with images, search tags, map bookings, complete with DRF backend authentication API."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "skill_name": "Python",
+  "estimated_duration": "4 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Proficient Python developer capable of writing clean, object-oriented, testable code and building intermediate-level web and automation projects.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Python Basics & Fundamentals",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Variables & Data Types",
+          "subtopics": ["Integer", "Float", "String", "Boolean", "Type Casting", "Dynamic Typing"]
+        },
+        {
+          "name": "Operators & Expressions",
+          "subtopics": ["Arithmetic Operators", "Comparison Operators", "Logical Operators", "Identity & Membership Operators"]
+        },
+        {
+          "name": "Control Flow structures",
+          "subtopics": ["If-Else Conditionals", "Elif Ladder", "For Loops & Range", "While Loops", "Break & Continue Statements"]
+        },
+        {
+          "name": "Functions",
+          "subtopics": ["Defining Functions", "Arguments (*args, **kwargs)", "Return Values", "Scope (Local vs Global)", "Lambda Functions"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily solving coding exercises on websites like HackerRank or Exercism.",
+      "mini_project": {
+        "title": "Calculator & Password Generator",
+        "description": "A terminal-based menu-driven calculator that keeps history, and a robust random password generator with criteria options (letters, digits, symbols)."
+      },
+      "milestone": "Comfortable with core syntax, writing procedural scripts, and using standard library math/random packages."
+    },
+    {
+      "phase_title": "Phase 2: Data Structures & Built-in Modules",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Lists & Tuples",
+          "subtopics": ["Indexing", "Slicing", "List Methods", "List Comprehensions", "Tuple Immutability", "Unpacking"]
+        },
+        {
+          "name": "Dictionaries & Sets",
+          "subtopics": ["Key-Value Pairs", "Dictionary Methods", "Set Operations (Union, Intersection)", "Dictionary Comprehensions"]
+        },
+        {
+          "name": "File Handling & Exception Handling",
+          "subtopics": ["Reading & Writing Files (txt, csv)", "The 'with' statement", "Try-Except-Finally blocks", "Custom Exceptions"]
+        },
+        {
+          "name": "Useful Built-in Modules",
+          "subtopics": ["os & sys for path operations", "datetime for date calculations", "json for reading/writing structured data"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily building small scripts to manipulate files and parse log datasets.",
+      "mini_project": {
+        "title": "Student Management & Log Analyzer",
+        "description": "A console application that loads and saves student records to a JSON file, and a script to read a web server log file and count request types."
+      },
+      "milestone": "Mastered collection data types, error resilient code, and structured data handling (JSON/CSV)."
+    },
+    {
+      "phase_title": "Phase 3: Object-Oriented Programming (OOP)",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "OOP Core Concepts",
+          "subtopics": ["Classes & Objects", "Attributes & Methods", "Constructor (__init__)", "Self parameter"]
+        },
+        {
+          "name": "Inheritance & Polymorphism",
+          "subtopics": ["Single & Multiple Inheritance", "Method Overriding", "Super() function", "Abstract Classes"]
+        },
+        {
+          "name": "Encapsulation & Abstraction",
+          "subtopics": ["Public, Protected, & Private Members", "Getters & Setters (@property decorator)", "Name Mangling"]
+        },
+        {
+          "name": "Dunder Methods & Decorators",
+          "subtopics": ["Magic Methods (__str__, __len__, __repr__)", "Creating custom decorators", "Static & Class methods"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily designing class hierarchies for simulated real-world scenarios (e.g. banking system).",
+      "mini_project": {
+        "title": "Library Catalog or Bank Account Manager",
+        "description": "An object-oriented library management system with Book, Member, and Transaction classes implementing borrowing logic."
+      },
+      "milestone": "Deep understanding of how to organize large programs using classes, objects, and abstract layers."
+    },
+    {
+      "phase_title": "Phase 4: Intermediate & Web Fundamentals",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Virtual Environments & Package Managers",
+          "subtopics": ["venv module", "pip commands", "requirements.txt", "Pipenv / Poetry basics"]
+        },
+        {
+          "name": "Interacting with Databases",
+          "subtopics": ["SQLite integration via sqlite3", "Executing SQL queries in Python", "Introduction to SQLAlchemy ORM"]
+        },
+        {
+          "name": "HTTP Protocols & Web API client",
+          "subtopics": ["requests module", "Handling GET/POST requests", "Parsing response data from third-party APIs"]
+        },
+        {
+          "name": "Introduction to Web Frameworks",
+          "subtopics": ["FastAPI or Flask basics", "Routing and Request parameters", "Returning JSON responses"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily building and testing REST APIs locally.",
+      "mini_project": {
+        "title": "Task Manager REST API",
+        "description": "A FastAPI microservice that performs CRUD operations on a SQLite database representing tasks, complete with validation."
+      },
+      "milestone": "Able to interface Python with database systems, make external web requests, and build functional RESTful endpoints."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce Inventory API & Command Center",
+      "description": "A full-scale backend system with authentication (JWT), role-based permissions, an SQLite/PostgreSQL database integration via SQLAlchemy, and a clean admin CLI tool to monitor inventory status."
+    },
+    {
+      "title": "Automated Web Scraper and Data Reporter",
+      "description": "A concurrent web scraping utility using BeautifulSoup and asyncio that extracts prices from multiple websites, saves data to SQLite, and sends an automated HTML email report using smtplib."
+    }
+  ]
+}

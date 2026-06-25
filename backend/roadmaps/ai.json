@@ -1,0 +1,110 @@
+{
+  "skill_name": "Artificial Intelligence",
+  "estimated_duration": "6 Months",
+  "daily_study_time": "3 Hours",
+  "expected_outcome": "Competent AI engineer with an understanding of machine learning algorithms, deep learning neural networks, natural language processing, and model deployment strategies.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Mathematics & Data Foundation",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Linear Algebra & Calculus",
+          "subtopics": ["Vectors & Matrices", "Matrix Multiplication & Eigenvalues", "Derivatives & Gradients", "Partial Derivatives & Chain Rule"]
+        },
+        {
+          "name": "Probability & Statistics",
+          "subtopics": ["Descriptive Statistics", "Probability Distributions", "Bayes Theorem", "Hypothesis Testing"]
+        },
+        {
+          "name": "Python for AI",
+          "subtopics": ["NumPy for arrays/matrix manipulation", "Pandas for dataframes and data cleaning", "Matplotlib & Seaborn for data visualization"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily implementing vector operations, statistics formulas, and doing basic data analysis in Jupyter Notebooks.",
+      "mini_project": {
+        "title": "Exploratory Data Analysis (EDA) Report",
+        "description": "Analyze a real-world dataset (e.g., housing prices) and create statistical summary charts, matrix operations, and clean out missing values."
+      },
+      "milestone": "Strong foundation in the mathematics driving AI algorithms and command over Python data packages."
+    },
+    {
+      "phase_title": "Phase 2: Classical Machine Learning",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Supervised Learning",
+          "subtopics": ["Linear & Logistic Regression", "Decision Trees & Random Forests", "Support Vector Machines (SVM)", "Evaluation Metrics (Accuracy, Precision, Recall, F1, ROC-AUC)"]
+        },
+        {
+          "name": "Unsupervised Learning",
+          "subtopics": ["K-Means Clustering", "Hierarchical Clustering", "Principal Component Analysis (PCA)", "Dimensionality Reduction"]
+        },
+        {
+          "name": "Model Optimization & Tuning",
+          "subtopics": ["Train/Test Split & Cross-Validation", "Overfitting vs Underfitting", "GridSearchCV & RandomSearchCV", "Feature Selection & Engineering"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily building model training workflows using Scikit-Learn.",
+      "mini_project": {
+        "title": "Customer Segmentation & Heart Disease Predictor",
+        "description": "Create a classification model to predict disease presence and group users into segments based on spending habits using K-Means."
+      },
+      "milestone": "Equipped to choose, train, evaluate, and tune classical machine learning models for tabular data."
+    },
+    {
+      "phase_title": "Phase 3: Deep Learning & Neural Networks",
+      "duration": "8 Weeks",
+      "topics": [
+        {
+          "name": "Neural Network Foundations",
+          "subtopics": ["Perceptron & Activation Functions (ReLU, Sigmoid, Softmax)", "Forward & Backward Propagation", "Loss Functions & Optimizers (SGD, Adam)"]
+        },
+        {
+          "name": "Computer Vision (CNNs)",
+          "subtopics": ["Convolutional Layers", "Pooling Layers", "Image Classification with PyTorch or TensorFlow", "Transfer Learning (ResNet, VGG)"]
+        },
+        {
+          "name": "Sequence Models (RNNs/Transformers)",
+          "subtopics": ["Recurrent Neural Networks (RNN)", "LSTM & GRU cells", "Attention Mechanism & Transformer basics"]
+        }
+      ],
+      "practice_schedule": "3 Hours daily writing deep learning code using PyTorch, setting up neural network layers, and training on GPU.",
+      "mini_project": {
+        "title": "Image Classifier & Sentiment Analysis Model",
+        "description": "Build an image classifier using transfer learning on custom images, and a text classifier using embeddings to analyze review sentiments."
+      },
+      "milestone": "Proficient in designing and training multi-layer perceptrons, CNNs, and recurrent networks for audio/text/image data."
+    },
+    {
+      "phase_title": "Phase 4: Advanced AI & Model Deployment",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Natural Language Processing (NLP)",
+          "subtopics": ["Tokenization & TF-IDF", "Word Embeddings (Word2Vec, GloVe)", "Fine-tuning LLMs (HuggingFace transformers)"]
+        },
+        {
+          "name": "Model Deployment & MLOps",
+          "subtopics": ["Saving models (pickle, ONNX)", "Creating APIs for models with FastAPI", "Containerizing models with Docker", "Monitoring model drift"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily packing neural models into microservices and deploying on local or cloud hosts.",
+      "mini_project": {
+        "title": "AI-Powered Translation or Chatbot API",
+        "description": "Serve a lightweight language model or computer vision model behind a FastAPI endpoint containerized with Docker."
+      },
+      "milestone": "Ready to take research-level models, integrate NLP utilities, and deploy them as reliable production APIs."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Autonomous Object Detection & Alert System",
+      "description": "A real-time object detection system using YOLO or a fine-tuned SSD, detecting objects via webcam feed and triggering API alerts upon detecting specific items."
+    },
+    {
+      "title": "End-to-End Predictive Analytics Pipeline",
+      "description": "A production-grade pipeline that auto-ingests database records, performs feature engineering, retrains an ensemble ML model, exposes predictions via a secure web dashboard, and logs performance metrics."
+    }
+  ]
+}

@@ -1,118 +1,134 @@
-# SkillPath AI 🧭
+# SkillPath AI - Predefined Roadmap Generator
 
-SkillPath AI is a premium, full-stack web application that leverages artificial intelligence to generate personalized, multi-phase learning roadmaps for any skill. The application provides an interactive learning dashboard where users can check off completed topics, track their visual progress in real-time, view hands-on milestones, and export a styled, multi-page PDF guide.
+SkillPath AI is a modern production-ready web application designed to help users learn any skill through a structured, phase-by-phase learning path. It retrieves learning paths from a local JSON database and provides an option to download a professional PDF curriculum vector format.
 
 ---
 
 ## Technical Stack
 
-- **Frontend**: React, TypeScript, Vite, Vanilla CSS (custom glassmorphic theme).
-- **Backend**: FastAPI (Python), Uvicorn.
-- **AI Engine**: Google Gemini API via official `google-generativeai` SDK.
-- **PDF Engine**: ReportLab.
+* **Frontend**: React (Vite + TypeScript), Tailwind CSS, React Router, Lucide Icons
+* **Backend**: Python FastAPI, FPDF2 (PDF generation)
+* **Database**: Local JSON Database files
+* **State Management**: React Hooks (useState, useEffect, useRef)
 
 ---
 
 ## Project Structure
 
 ```text
-RoadMap Generator/
-├── backend/
-│   ├── main.py              # FastAPI app setup, routes, and CORS config
-│   ├── gemini_service.py    # Gemini AI integration using structured schemas
-│   ├── pdf_service.py       # Custom ReportLab PDF compiler
-│   ├── requirements.txt     # Python requirements
-│   └── .env.example         # Template for environment configuration
+SkillPathAI/
 ├── frontend/
 │   ├── src/
-│   │   ├── components/      
-│   │   │   ├── RoadmapInput.tsx   # Landing UI & search form
-│   │   │   ├── RoadmapView.tsx    # Interactive dashboard & progress tracker
-│   │   │   └── SkeletonLoader.tsx # Animated layout placeholder
-│   │   ├── App.tsx          # State manager & API client
-│   │   ├── index.css        # Premium custom CSS stylesheets
-│   │   ├── types.ts         # Shared TS interface definitions
-│   │   └── main.tsx         
-│   ├── index.html           
-│   ├── package.json         
-│   └── vite.config.ts       
-└── README.md                # System setup & startup manual
+│   │   ├── components/
+│   │   │   ├── Layout.tsx          # Main layout header, footer, dark mode toggle
+│   │   │   └── SkeletonLoader.tsx  # Pulse skeletons for premium loading transition
+│   │   ├── pages/
+│   │   │   ├── Home.tsx            # Autocomplete search & popular path tags
+│   │   │   └── RoadmapView.tsx     # Timeline visualizer & PDF trigger
+│   │   ├── services/
+│   │   │   └── api.ts              # API fetch networking calls and TS interfaces
+│   │   ├── App.tsx                 # Route declarations
+│   │   └── index.css               # Styling definitions & Google Fonts import
+│   ├── tailwind.config.js          # Tailwind styling scanning configs
+│   ├── .env                        # Local port mapping env definition
+│   └── package.json                # Frontend dependencies
+│
+├── backend/
+│   ├── roadmaps/                   # Predefined Roadmap Database Files
+│   │   ├── python.json
+│   │   ├── java.json
+│   │   ├── ai.json
+│   │   ├── datascience.json
+│   │   ├── cybersecurity.json
+│   │   ├── devops.json
+│   │   ├── cloud.json
+│   │   └── mern.json
+│   ├── main.py                     # FastAPI server with CORS & alias-lookup mappings
+│   ├── pdf_generator.py            # FPDF2 custom vector document compiling engine
+│   ├── test_backend.py             # Local sanity verification script
+│   └── requirements.txt            # Python dependencies
+│
+├── README.md                       # Comprehensive setup guide
+└── .gitignore                      # Git tracking exclude file
 ```
 
 ---
 
-## Setup & Running Instructions
+## Setup & Running Locally
 
 ### Prerequisites
-1. **Python**: Version 3.8 or higher.
-2. **NodeJS & NPM**: Node version 18.0 or higher.
-3. **Gemini API Key**: Obtain one from [Google AI Studio](https://aistudio.google.com/).
+Make sure you have **Node.js (v24+)** and **Python (3.12+)** installed on your system.
 
 ---
 
-### Step 1: Run the Backend Server
+### 1. Run the Python FastAPI Backend
 
-1. Open a new terminal in the `backend` directory:
-   ```bash
-   cd backend
-   ```
-
-2. Create a virtual environment (optional but recommended):
+1. Navigate to the `backend/` directory in your terminal.
+2. Create a virtual environment:
    ```bash
    python -m venv venv
-   # Activate virtualenv on Windows:
-   .\venv\Scripts\activate
-   # Activate virtualenv on macOS/Linux:
-   source venv/bin/activate
    ```
-
-3. Install required packages:
+3. Activate the virtual environment:
+   * **Windows (PowerShell)**:
+     ```powershell
+     .\venv\Scripts\Activate.ps1
+     ```
+   * **Linux/macOS**:
+     ```bash
+     source venv/bin/activate
+     ```
+4. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-
-4. Configure your environment:
-   - Create a `.env` file copying `.env.example`:
-     ```bash
-     copy .env.example .env
-     ```
-   - Edit the `.env` file and insert your `GEMINI_API_KEY`:
-     ```text
-     GEMINI_API_KEY=AIzaSy...
-     ```
-     *(Note: If you leave this blank, you will need to input your Gemini key in the frontend settings panel).*
-
-5. Run the FastAPI development server:
+5. Run the server using Uvicorn:
    ```bash
-   python main.py
+   python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
    ```
-   The backend server will launch at `http://127.0.0.1:8000`.
+   The backend API will be live at: `http://localhost:8000`. You can inspect the interactive swagger docs at `http://localhost:8000/docs`.
 
 ---
 
-### Step 2: Run the Frontend Server
+### 2. Run the React Frontend
 
-1. Open a new terminal in the `frontend` directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies (if not already done):
+1. Navigate to the `frontend/` directory in a new terminal window.
+2. Install the required packages:
    ```bash
    npm install
    ```
-
-3. Start the Vite React development server:
+3. Create a `.env` file in the `frontend/` folder (if it doesn't already exist) and define the backend URL:
+   ```env
+   VITE_API_URL=http://localhost:8000
+   ```
+4. Start the development server:
    ```bash
    npm run dev
    ```
-   The frontend application will be hosted at `http://localhost:5173`. Open this URL in your web browser.
+   Open your browser and navigate to `http://localhost:5173/` to view the application!
 
 ---
 
-## How to Use the Application
+## Predefined Roadmap Catalog
 
-1. **Enter Skill**: Type any skill you want to learn (e.g., "Docker", "Machine Learning", "Go Programming", "Oil Painting") in the search input and click **Generate Roadmap**. Or, click one of the pre-configured popular paths.
-2. **Dynamic Progress Tracking**: As you complete topics, click on the subtopic checklist inside each phase card. The overall roadmap progress indicator will update automatically.
-3. **Persist State**: Your progress is stored locally. You can close the tab or refresh the page, and clicking **Resume current path** on the landing page will load your exact roadmap and checklist state.
-4. **PDF Download**: Click the **Download PDF Guide** button at the top-right of your dashboard. The backend will compile the current roadmap JSON into a publication-quality multi-page PDF formatted with phase dividers, project tables, and milestone checklists.
+The local database currently holds robust, production-ready syllabuses for:
+1. **Python** (Basic variables, control flows, OOP, database REST configurations)
+2. **Java** (JDK architectures, OOP encapsulation, lists/streams, Spring Boot web backend)
+3. **Artificial Intelligence** (Linear Algebra/Statistics, classical ML, deep CNN/transformer networks, MLOps)
+4. **Data Science** (SQL querying, pandas data wrangling, Scikit-learn models, Streamlit dashboard reporting)
+5. **Cyber Security** (OSI networks, Cryptography PKI, Burp suite testing, SIEM log forensics)
+6. **DevOps** (Bash automating, quality Jenkins builds, Docker/Kubernetes container orchestration, Terraform IaC)
+7. **Cloud Computing** (AWS EC2 hosting, VPC private networks, Serverless Lambda triggers, Cost & Budget audits)
+8. **MERN Stack** (React state routers, Express backend APIs, Mongoose MongoDB modeling, Redux deployments)
+
+---
+
+## Verification & Testing
+
+To verify the API endpoints and local PDF generation engines are fully functional, you can run the sanity check suite:
+```bash
+cd backend
+.\venv\Scripts\python test_backend.py
+```
+This tests:
+1. Compilation of a clean PDF vector file from mock JSON schemas.
+2. Success codes when fetching `/api/skills` and individual roadmaps from the active server.

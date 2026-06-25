@@ -1,0 +1,110 @@
+{
+  "skill_name": "React",
+  "estimated_duration": "3 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent frontend engineer capable of creating responsive React web applications, managing state, handling API integration, and structuring code using modern React Hooks.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: React Core & Component Design",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Introduction to JSX & Virtual DOM",
+          "subtopics": ["Vite toolchain configuration", "JSX rules and structure", "Underlying Virtual DOM mechanism"]
+        },
+        {
+          "name": "Components & Rendering",
+          "subtopics": ["Functional Components", "Props passing and default props", "Rendering list collections with Keys"]
+        },
+        {
+          "name": "Styling in React",
+          "subtopics": ["CSS modules", "Tailwind CSS setup and directives", "Dynamic inline styling"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily building small reusable presentational UI elements.",
+      "mini_project": {
+        "title": "Business Directory Cards Grid",
+        "description": "Create a layout grid showing company cards with tags, descriptions, status checks, and filtering parameters based on mock listings."
+      },
+      "milestone": "Mastered React scaffolding, component rendering, props layout, and modern CSS frameworks setup."
+    },
+    {
+      "phase_title": "Phase 2: Core Hooks & State Control",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "State Management (useState)",
+          "subtopics": ["Updating state correctly", "Sharing state across siblings (lifting state up)", "Derived state configurations"]
+        },
+        {
+          "name": "Side Effects & Calling APIs",
+          "subtopics": ["useEffect lifecycle hooks", "Dependency arrays optimization", "Cleanup operations (intervals, event listeners)"]
+        },
+        {
+          "name": "Forms Handling",
+          "subtopics": ["Controlled vs Uncontrolled components", "Form validation states", "Submit event binding"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily calling mock backend APIs and validating user input forms.",
+      "mini_project": {
+        "title": "Crypto Conversion Tool",
+        "description": "A web application that queries live token price data, enables input validation conversions, and displays interactive list charts."
+      },
+      "milestone": "Mastered handling component state, tracking side-effects, cleaning resources, and designing controlled forms."
+    },
+    {
+      "phase_title": "Phase 3: Routing & Global State",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Client Routing (React Router)",
+          "subtopics": ["Router setup (BrowserRouter)", "Link navigations and custom NavLinks", "Path variables (useParams)"]
+        },
+        {
+          "name": "React Context API",
+          "subtopics": ["Creating Context structures", "Context Provider wrappers", "Custom hook abstractions (useContext)"]
+        },
+        {
+          "name": "Additional Hooks",
+          "subtopics": ["useRef for tracking nodes", "useMemo & useCallback for performance caching"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily structuring pages, nesting routes, and consuming shared contexts.",
+      "mini_project": {
+        "title": "Portfolio Management App",
+        "description": "A multi-page application with navigation headers, profile edits, task details, and dark/light settings persisted via Context."
+      },
+      "milestone": "Comfortable building client routers, resolving route variables, and sharing state across pages."
+    },
+    {
+      "phase_title": "Phase 4: Global State Managers & API clients",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Redux Toolkit",
+          "subtopics": ["Store creation", "Slices and Reducers", "Actions, Dispatch, and Selectors", "Thunks for asynchronous processes"]
+        },
+        {
+          "name": "Custom Hooks & testing",
+          "subtopics": ["Writing reusable hooks", "React Testing Library basics"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily refactoring component hooks and structuring store layouts.",
+      "mini_project": {
+        "title": "E-Commerce Cart System",
+        "description": "Build an online shopping cart using Redux Toolkit to add, modify, calculate sums, and save cart configurations to localStorage."
+      },
+      "milestone": "Equipped to configure complex state databases with Redux, build reusable hooks, and prepare projects for release."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Task Manager and Kanban Dashboard",
+      "description": "A complex application featuring drag-drop columns, task filtering tags, project creation overlays, subtask lists, and detailed progress charts."
+    },
+    {
+      "title": "Full-Featured Movie Explorer & Dashboard",
+      "description": "Exposes pagination grids, advanced search filters, rating categories, bookmark settings, details trailers, and loads results dynamically from API databases."
+    }
+  ]
+}

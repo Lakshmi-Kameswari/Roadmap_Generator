@@ -1,0 +1,102 @@
+{
+  "skill_name": "Spring Boot",
+  "estimated_duration": "2 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent Java backend engineer capable of creating production-grade REST APIs, integrating databases using JPA, writing unit tests, and securing resources using Spring Security.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Dependency Injection & Configuration",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Spring Framework Core",
+          "subtopics": ["IoC Container & ApplicationContext", "Dependency Injection types", "Bean Scope and Lifecycles"]
+        },
+        {
+          "name": "Component Scan & Annotations",
+          "subtopics": ["@Component, @Service, @Repository, @Controller", "@Autowired annotations", "@Configuration and @Bean configurations"]
+        },
+        {
+          "name": "App Configurations",
+          "subtopics": ["application.properties vs application.yml", "@Value annotations", "Spring Profiles configuration"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily initializing projects using Spring Initializr and wiring beans manually.",
+      "mini_project": {
+        "title": "Email Notification Microservice",
+        "description": "Create a service that sends templates, utilizing profiles to switch between simulated Console log outputs and live SMTP transfers."
+      },
+      "milestone": "Mastered Spring's container concepts, dependency injection, annotations, and property configurations."
+    },
+    {
+      "phase_title": "Phase 2: REST Controllers & Data Mappings",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "RESTful Web Services",
+          "subtopics": ["@RestController definition", "@RequestMapping configurations", "@PathVariable and @RequestParam variables"]
+        },
+        {
+          "name": "Data Validation & Responses",
+          "subtopics": ["Binding validations (@Valid, @NotNull)", "Formatting ResponseEntities", "Global Exception Handler (@ControllerAdvice)"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing REST routes, setting query params, and coding response validation exceptions.",
+      "mini_project": {
+        "title": "Recipe REST Catalog",
+        "description": "Build an API offering filters for ingredients, returning custom validation message exceptions, and formatting structured JSON."
+      },
+      "milestone": "Familiar with writing HTTP endpoints, validating incoming objects, and parsing body queries."
+    },
+    {
+      "phase_title": "Phase 3: Database & Spring Data JPA",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Object Relational Mapping (ORM)",
+          "subtopics": ["JPA vs Hibernate overview", "@Entity, @Table, @Id declarations", "Primary keys generation configurations"]
+        },
+        {
+          "name": "Repository Interfaces",
+          "subtopics": ["CrudRepository vs JpaRepository", "Custom query methods (findBy...)", "Derived queries and @Query syntax"]
+        },
+        {
+          "name": "Relations",
+          "subtopics": ["@OneToMany and @ManyToOne", "@ManyToMany associations", "Lazy vs Eager fetching"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily configuring local H2 or PostgreSQL servers and mapping entity mappings.",
+      "mini_project": {
+        "title": "Tasks Database Registry",
+        "description": "Establish a JPA backend database for tasks, categories, and tags, supporting subtask lists mappings and sorting search filters."
+      },
+      "milestone": "Proficient in database entities modeling, CRUD operations via repositories, and resolving associations."
+    },
+    {
+      "phase_title": "Phase 4: Security & Testing",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Spring Security Architecture",
+          "subtopics": ["Authentication & Authorization concepts", "WebSecurityConfigurerAdapter and SecurityFilterChain setups", "Role-based controls (@PreAuthorize)"]
+        },
+        {
+          "name": "Testing frameworks",
+          "subtopics": ["JUnit 5 and Mockito setup", "@SpringBootTest integration tests", "MockMvc mock client calls"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily implementing JWT custom filters, mocking dependencies, and checking test coverage statistics.",
+      "mini_project": {
+        "title": "Secured Student Portal Backend",
+        "description": "A REST service containing register/login actions, BCrypt encryption, JWT check filters, and JUnit unit tests validation."
+      },
+      "milestone": "Equipped to lock endpoints, encrypt databases, model mocks, package apps (JARs), and launch production servers."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce Transaction Microservice",
+      "description": "Create a transactional system featuring user account profiles, order mapping arrays, inventories checks, database locking mechanisms, JWT protection, and full integration tests."
+    }
+  ]
+}

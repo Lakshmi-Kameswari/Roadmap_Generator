@@ -1,0 +1,130 @@
+{
+  "skill_name": "Java",
+  "estimated_duration": "5 Months",
+  "daily_study_time": "2.5 Hours",
+  "expected_outcome": "Competent enterprise Java developer proficient in core language features, OOP design patterns, Maven, JDBC, and building backend services with Spring Boot.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Java Basics & Syntax",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Introduction & Environment Setup",
+          "subtopics": ["JDK vs JRE vs JVM", "Classpaths and IDE (IntelliJ/Eclipse)", "First Java Program structure"]
+        },
+        {
+          "name": "Data Types & Operators",
+          "subtopics": ["Primitives (int, double, char, boolean)", "Reference Types (Strings, Arrays)", "Arithmetic, Logical & Bitwise Operators"]
+        },
+        {
+          "name": "Control Flow & Arrays",
+          "subtopics": ["if-else conditions", "switch-case statements (including modern switch)", "while, do-while, and for loops", "Single and Multi-dimensional Arrays"]
+        },
+        {
+          "name": "Methods & Scope",
+          "subtopics": ["Method Signatures", "Parameters & Return Types", "Method Overloading", "Recursion basics"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily of coding core algorithm practices on platforms like LeetCode or Codewars.",
+      "mini_project": {
+        "title": "Grade Calculator & Currency Converter",
+        "description": "Console applications implementing business logic using control flow, scanners for user input, and arrays to store transactional records."
+      },
+      "milestone": "Mastered basic Java programming concepts, compiler behavior, and standard CLI-based inputs/outputs."
+    },
+    {
+      "phase_title": "Phase 2: Object-Oriented Programming (OOP)",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Classes, Objects & Constructors",
+          "subtopics": ["Class declarations", "Instantiating Objects", "Default and Parameterized Constructors", "The 'this' keyword"]
+        },
+        {
+          "name": "Inheritance, Interfaces & Abstraction",
+          "subtopics": ["Extending Classes", "Method Overriding & Polymorphism", "Abstract Classes", "Interfaces & Multiple Inheritance"]
+        },
+        {
+          "name": "Encapsulation & Access Modifiers",
+          "subtopics": ["private, default, protected, public", "Getters and Setters", "Java Packages structure"]
+        },
+        {
+          "name": "Memory & Exceptions",
+          "subtopics": ["Stack vs Heap Memory", "Checked vs Unchecked Exceptions", "try-catch-finally, throw, throws", "Custom Exceptions"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily designing class structures and implementing object-oriented solutions.",
+      "mini_project": {
+        "title": "Employee Management System",
+        "description": "An OOP application representing different employee types (FullTime, PartTime, Contractor) using polymorphism, encapsulation, and error handling."
+      },
+      "milestone": "Strong command of OOP principles, custom exceptions, package structures, and Java's memory allocation model."
+    },
+    {
+      "phase_title": "Phase 3: Collections, Generics & Advanced Core Features",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Java Collection Framework",
+          "subtopics": ["List Interface (ArrayList, LinkedList)", "Set Interface (HashSet, TreeSet)", "Map Interface (HashMap, TreeMap)", "Iterator and Comparator/Comparable"]
+        },
+        {
+          "name": "Generics",
+          "subtopics": ["Generic Classes & Methods", "Bounded Wildcards", "Type Erasure"]
+        },
+        {
+          "name": "Java 8 Features & Streams",
+          "subtopics": ["Lambda Expressions", "Functional Interfaces", "Stream API (map, filter, reduce)", "Optional Class"]
+        },
+        {
+          "name": "File I/O & Threads",
+          "subtopics": ["Java NIO and Files Class", "Creating Threads (Runnable, Thread class)", "Synchronization basics"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily practicing functional programming patterns with Streams and file manipulation.",
+      "mini_project": {
+        "title": "Inventory Parser & Multi-threaded Downloader",
+        "description": "An application reading products from CSV, filtering and grouping them using Streams, and a multi-threaded image downloader."
+      },
+      "milestone": "Proficient with Java's extensive collections library, lambdas, streams, basic concurrency, and modern File APIs."
+    },
+    {
+      "phase_title": "Phase 4: Database Integration & Web Backend",
+      "duration": "8 Weeks",
+      "topics": [
+        {
+          "name": "Maven & Build Tools",
+          "subtopics": ["pom.xml structure", "Dependency Management", "Maven Lifecycle and build commands"]
+        },
+        {
+          "name": "Database Connectivity (JDBC)",
+          "subtopics": ["DriverManager", "PreparedStatement & ResultSet", "Connection Pooling basics"]
+        },
+        {
+          "name": "Spring Boot Basics",
+          "subtopics": ["Dependency Injection & Inversion of Control", "Spring Annotations (@Component, @Service, @RestController)", "Request routing with Controllers"]
+        },
+        {
+          "name": "Spring Data JPA & Hibernate",
+          "subtopics": ["Entity mappings", "Repository interfaces", "JPA queries and relations (@OneToMany, @ManyToOne)"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily building REST APIs and mapping database entities using JPA.",
+      "mini_project": {
+        "title": "Todo REST API with Spring Boot",
+        "description": "A REST service containing endpoints to add, retrieve, update, and delete tasks connected to an H2 or PostgreSQL database."
+      },
+      "milestone": "Equipped to configure Java web applications, interact with databases via JDBC/JPA, and build robust RESTful APIs."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce Backend Microservice",
+      "description": "A Spring Boot backend application featuring secure user registration/login (Spring Security & JWT), product management, order processing, database persistence, and integration testing with JUnit and Mockito."
+    },
+    {
+      "title": "Bank Transaction Processing System",
+      "description": "A transactional console/REST system implementing thread-safe money transfers, auditing logs using Spring AOP, database transaction management (@Transactional), and CSV statements exporting functionality."
+    }
+  ]
+}

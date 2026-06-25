@@ -1,0 +1,82 @@
+{
+  "skill_name": "HTML",
+  "estimated_duration": "3 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Solid grasp of semantic HTML5 markup structure, creating forms, embedding media, optimizing for SEO, and organizing web documents professionally.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Tags & Document structure",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Standard Document Elements",
+          "subtopics": ["DOCTYPE declaration", "head vs body tags", "title, meta, and link elements"]
+        },
+        {
+          "name": "Text Structuring",
+          "subtopics": ["Heading hierarchy (h1 to h6)", "Paragraphs and line breaks", "Format tags (strong, em, blockquote)"]
+        },
+        {
+          "name": "Hyperlinks & Lists",
+          "subtopics": ["Anchor tags and attributes", "Ordered and unordered lists", "Description lists tags"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily writing basic webpage structures and creating text outlines.",
+      "mini_project": {
+        "title": "Topic Index Document",
+        "description": "Create a clean, multi-section webpage about a topic utilizing tags, tables of contents, lists, and external links."
+      },
+      "milestone": "Mastered standard document configurations, headings hierarchy, links, and list structures."
+    },
+    {
+      "phase_title": "Phase 2: HTML5 Semantic Structure & Forms",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Semantic Layout Tags",
+          "subtopics": ["header, nav, main, section, article", "aside, footer layout definitions", "SEO structural impacts"]
+        },
+        {
+          "name": "Web Forms Design",
+          "subtopics": ["form elements and actions", "Input categories (text, password, email, date, radio, checkbox)", "Textarea and select dropdowns", "Submit buttons and validations attributes"]
+        },
+        {
+          "name": "Tables Structure",
+          "subtopics": ["table, tr, td, th elements", "thead, tbody, tfoot groupings", "colspan and rowspan attributes"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily compiling semantic layouts and input registration forms.",
+      "mini_project": {
+        "title": "Interactive Survey Form Page",
+        "description": "Build an HTML survey form incorporating text inputs, rating scales, date pickers, dropdown selects, and feedback checkboxes."
+      },
+      "milestone": "Familiar with writing readable, SEO-optimized layouts, database-ready forms, and structured tables."
+    },
+    {
+      "phase_title": "Phase 3: Multimedia & SEO Meta tags",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Media Elements",
+          "subtopics": ["img tag and alt attributes", "audio and video embedding tags", "source and tracks details"]
+        },
+        {
+          "name": "SEO & Performance metadata",
+          "subtopics": ["meta descriptions and viewport variables", "Open Graph settings for social sharing", "Importing favicon icons"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily embedding audio/video files and setting tags for responsiveness checks.",
+      "mini_project": {
+        "title": "Recipes Portal Layout Page",
+        "description": "Create a multimedia-rich recipes page containing descriptive lists, embedded video guides, header navigation, and structured meta tags."
+      },
+      "milestone": "Equipped to develop fully accessible, indexable, semantic, and media-rich HTML5 pages."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Web Portfolio Structure Outline",
+      "description": "Write the structural HTML outline for a comprehensive portfolio site, utilizing header profiles, navigation tabs, project pages tables, registration contacts forms, and SEO metadata."
+    }
+  ]
+}

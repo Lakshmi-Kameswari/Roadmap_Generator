@@ -1,0 +1,110 @@
+{
+  "skill_name": "Data Science",
+  "estimated_duration": "5 Months",
+  "daily_study_time": "2.5 Hours",
+  "expected_outcome": "Competent Data Scientist skilled in extracting insights from data, building statistical models, designing interactive dashboards, and running machine learning pipelines.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Foundations, Python & SQL",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Python Essentials for Data Science",
+          "subtopics": ["Data Types & Loops", "Lists, Dicts, & Data structures", "Functions & Scripting", "Jupyter Notebook Environment"]
+        },
+        {
+          "name": "Relational Databases & SQL",
+          "subtopics": ["SELECT statements & Filtering", "JOINs (Inner, Left, Right, Outer)", "Aggregations (GROUP BY, HAVING)", "Subqueries & Window Functions"]
+        },
+        {
+          "name": "Mathematical Basics",
+          "subtopics": ["Descriptive Statistics (Mean, Median, Std Dev)", "Inferential Statistics (t-tests, ANOVA)", "Correlation & Covariance"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing SQL queries on platforms like LeetCode and building simple Python analysis scripts.",
+      "mini_project": {
+        "title": "Database Querying & Statistical Report",
+        "description": "Write complex SQL queries to pull customer transaction history from a database and write a Python script using pandas to summarize key statistics."
+      },
+      "milestone": "Proficient in SQL data extraction and basics of descriptive statistics using Python."
+    },
+    {
+      "phase_title": "Phase 2: Data Wrangling & Exploratory Analysis",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Data Manipulation with Pandas",
+          "subtopics": ["Loading CSV, Excel, and JSON data", "Handling Missing Values", "Data Filtering & Merging", "Groupby operations & Pivot tables"]
+        },
+        {
+          "name": "Numerical Computing & Viz",
+          "subtopics": ["NumPy arrays and vectorized calculations", "Matplotlib for basic plotting", "Seaborn for advanced statistical plots", "Plotly for interactive charts"]
+        },
+        {
+          "name": "Exploratory Data Analysis (EDA) Techniques",
+          "subtopics": ["Outlier Detection", "Feature Distribution Analysis", "Correlation Analysis"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily downloading public datasets (e.g. from Kaggle) and performing thorough cleaning and visualization.",
+      "mini_project": {
+        "title": "Real-World Dataset Cleaning & Viz",
+        "description": "Take a dirty raw dataset, clean all missing and corrupt values, perform correlation analysis, and compile a dashboard of visualizations."
+      },
+      "milestone": "Mastered Pandas, data cleaning, and statistical data visualization techniques."
+    },
+    {
+      "phase_title": "Phase 3: Machine Learning & Modeling",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Supervised Learning",
+          "subtopics": ["Linear Regression & Lasso/Ridge", "Logistic Regression for Classification", "Decision Trees & Ensemble Methods (Random Forest, XGBoost)"]
+        },
+        {
+          "name": "Unsupervised Learning",
+          "subtopics": ["K-Means Clustering", "Dimensionality Reduction with PCA"]
+        },
+        {
+          "name": "Model Evaluation & Tuning",
+          "subtopics": ["Cross-Validation", "Hyperparameter tuning (GridSearch)", "Metrics: Precision, Recall, ROC-AUC"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily training models on structured datasets using Scikit-Learn.",
+      "mini_project": {
+        "title": "Churn Prediction Model",
+        "description": "Develop a classification model using XGBoost to predict customer churn, evaluate it using a confusion matrix, and tune its hyperparameters."
+      },
+      "milestone": "Comfortable building, evaluating, and improving predictive models on structured tables."
+    },
+    {
+      "phase_title": "Phase 4: Reporting, BI & Storytelling",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Interactive Dashboards",
+          "subtopics": ["Streamlit framework for Python web apps", "Tableau or Power BI fundamentals", "Building dashboard reports"]
+        },
+        {
+          "name": "Data Storytelling & Communication",
+          "subtopics": ["Designing presentations for business stakeholders", "Writing executive summaries", "A/B Testing basics"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily converting predictive models into interactive dashboards.",
+      "mini_project": {
+        "title": "Interactive Analytics Web App",
+        "description": "Build a Streamlit dashboard that lets users upload a CSV file, view statistical summaries, and run predictions using a saved machine learning model."
+      },
+      "milestone": "Capable of translating technical data models into visual business reports and interactive apps."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Real Estate Valuation System & Dashboard",
+      "description": "A complete data science product: extracts house listings using python scrapers, runs a cleaning ETL pipeline, trains an ensemble model to predict prices, and hosts an interactive Streamlit app with geospatial visualizations."
+    },
+    {
+      "title": "A/B Testing & User Behavior Dashboard",
+      "description": "Design an experimental framework, analyze simulated clickstream user data, perform statistical significance testing (Z-test, Chi-square), and build a Tableau/Streamlit dashboard demonstrating the business impact."
+    }
+  ]
+}

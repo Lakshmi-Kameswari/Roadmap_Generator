@@ -1,0 +1,98 @@
+{
+  "skill_name": "Playwright",
+  "estimated_duration": "1 Month",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent automation engineer skilled in writing end-to-end web tests, configuring test runners, generating HTML reports, and testing APIs using Playwright.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Setup & Selector Basics",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Playwright Core Concepts",
+          "subtopics": ["BrowserContext vs Page", "Architecture (WebSocket protocol advantages)", "Playwright Config setup"]
+        },
+        {
+          "name": "Locators & Selectors",
+          "subtopics": ["Locating elements (getByRole, getByText)", "CSS and XPath fallbacks", "Chaining locators"]
+        },
+        {
+          "name": "Assertions & Waiting",
+          "subtopics": ["Auto-waiting concepts", "Expect assertions (toBeVisible, toHaveText)"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily scripting page navigations, asserting titles, and locating inputs.",
+      "mini_project": {
+        "title": "Static Page Automation Suite",
+        "description": "Write a test script that navigates to a documentation portal, searches for items, selects pages, and asserts text headings match."
+      },
+      "milestone": "Mastered Playwright workspace initialization, locator selections, and page loading assertions."
+    },
+    {
+      "phase_title": "Phase 2: Interactions & Page Object Model (POM)",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "User Actions",
+          "subtopics": ["Typing and clicking inputs", "Handling checkboxes, dropdowns, and radio selectors", "Uploading files", "Keyboard key events"]
+        },
+        {
+          "name": "Page Object Model (POM)",
+          "subtopics": ["Creating POM class schemas", "Declaring page locators and methods", "Refactoring test suites to POM"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily refactoring tests to POM classes and scripting forms entries.",
+      "mini_project": {
+        "title": "Dynamic Feedback Test Suite",
+        "description": "Automate testing an online survey page: fill text fields, select options, submit, and verify validation errors using POM."
+      },
+      "milestone": "Proficient in simulating user action sequences, organizing code with POM, and verifying validation messages."
+    },
+    {
+      "phase_title": "Phase 3: Advanced Handling & API Tests",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Handling Complex UI",
+          "subtopics": ["Switching tabs/windows", "Handling alerts and dialog boxes", "Manipulating iframes"]
+        },
+        {
+          "name": "API Testing with Playwright",
+          "subtopics": ["Interacting with endpoints using request client", "Asserting status codes and JSON properties", "Injecting authentication states"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily intercepting network traffic and testing REST endpoint integrations.",
+      "mini_project": {
+        "title": "CRUD REST API & Integration Test",
+        "description": "Write tests that trigger a backend API to add a product, mock visual lists updates in frontend, and assert updates represent."
+      },
+      "milestone": "Capable of managing complex dialog states, automating iframe elements, and validating API structures."
+    },
+    {
+      "phase_title": "Phase 4: CI/CD & Report Configs",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Test Reports & Traces",
+          "subtopics": ["HTML reports configuration", "Trace Viewer setup and review", "Taking screenshots and video recordings on failure"]
+        },
+        {
+          "name": "CI Integration",
+          "subtopics": ["Running tests in headless mode", "Configuring GitHub Actions test workflows", "Caching node dependencies"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily configuring YAML pipelines, inspecting failure traces, and formatting reports.",
+      "mini_project": {
+        "title": "Continuous Test Pipeline",
+        "description": "Establish a GitHub Action configuration that triggers tests on commit pushes, runs them in headless Chromium, and packages failures."
+      },
+      "milestone": "Equipped to review failure traces, configure HTML dashboards, and deploy tests to automated CI pipelines."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce E2E Automation Framework",
+      "description": "Create a testing repository covering: user sign-in checks, catalog navigation, shopping cart updates, mock payment validations, parallel execution, POM patterns, and daily pipeline reports."
+    }
+  ]
+}

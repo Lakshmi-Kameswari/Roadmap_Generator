@@ -1,0 +1,86 @@
+{
+  "skill_name": "CSS",
+  "estimated_duration": "4 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Competent layout designer capable of structuring modern responsive grids, styling layouts, applying custom variables, and designing sleek micro-animations.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Selector Rules & Box Model",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "CSS Basics",
+          "subtopics": ["Inline, internal, and external styles", "Class vs ID selectors", "Specificity rules hierarchy", "Inheritance and cascade overrides"]
+        },
+        {
+          "name": "Box Model",
+          "subtopics": ["Width & height", "Padding, border, and margin", "Box-sizing border-box rules", "Margin collapsing"]
+        },
+        {
+          "name": "Typography & Colors",
+          "subtopics": ["Font weights and line heights", "Color models (Hex, RGB, HSL)", "Text styling properties"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily writing style override selectors and modeling box borders.",
+      "mini_project": {
+        "title": "Styled Profile Profile Card",
+        "description": "Create a styled profile card displaying images, text hierarchies, custom border radii, shadow effects, and hover transitions."
+      },
+      "milestone": "Mastered basic styling rules, selector specificity priorities, box sizing limits, and custom typography integrations."
+    },
+    {
+      "phase_title": "Phase 2: Modern Layout Systems",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Flexbox Layouts",
+          "subtopics": ["Flex containers vs flex items", "Main axis alignment (justify-content)", "Cross axis alignment (align-items)", "Flex grow, shrink, and wrap rules"]
+        },
+        {
+          "name": "Grid Layouts",
+          "subtopics": ["Defining grids and gaps", "Grid-template-columns (fr units, repeat, minmax)", "Placing items (grid-column/row)", "Template areas"]
+        },
+        {
+          "name": "Positions and Displays",
+          "subtopics": ["Static, relative, absolute, fixed, sticky", "Display block vs inline-block vs none"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily alignment mapping using grid structures and flex containers.",
+      "mini_project": {
+        "title": "Sleek Dashboard Portal Grid",
+        "description": "Design a dashboard grid showcasing sidebar guides, headers blocks, search details, and nested data cards using CSS Grid."
+      },
+      "milestone": "Proficient in aligning pages, creating responsive navigation bars, overlaying overlays, and grid layouts."
+    },
+    {
+      "phase_title": "Phase 3: Responsive layouts, Variables & Animations",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Responsive Design",
+          "subtopics": ["Media Queries breakpoints", "Relative units (rem, em, vw, vh)", "Responsive image layouts"]
+        },
+        {
+          "name": "CSS Custom Variables",
+          "subtopics": ["Declaring variables (:root)", "Using var() functions", "Theme switching configs"]
+        },
+        {
+          "name": "Transitions & Animations",
+          "subtopics": ["Transition properties (duration, ease, delay)", "Keyframes syntax", "Transformations (scale, translate, rotate)"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily implementing media breakpoints, theme colors, and loading animation spinners.",
+      "mini_project": {
+        "title": "Themed Marketing Landing Page",
+        "description": "Develop a landing page that adapts to mobile viewport screens, utilizes CSS variables for dark themes, and features slide-in cards on hover."
+      },
+      "milestone": "Equipped to construct responsive designs, establish CSS theme setups, and implement smooth visual feedback cues."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Interactive Responsive Corporate Portal UI",
+      "description": "A layout featuring mobile-responsive columns, custom grid dashboards, animations overlays, smooth transition cards, and light/dark styling toggles via root variables."
+    }
+  ]
+}

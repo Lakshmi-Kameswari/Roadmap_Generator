@@ -1,0 +1,74 @@
+{
+  "skill_name": "MongoDB",
+  "estimated_duration": "4 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Competent database engineer skilled in structuring NoSQL document structures, writing query filters, compiling aggregation pipelines, and configuring indexes.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Documents & Basic CRUD",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "MongoDB Shell & Atlas",
+          "subtopics": ["NoSQL Document model overview", "MongoDB Atlas cloud database setup", "Compass UI connection"]
+        },
+        {
+          "name": "CRUD Operations",
+          "subtopics": ["insertOne / insertMany", "find query filters", "updateOne / updateMany with operators ($set, $inc, $push)", "deleteOne / deleteMany"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily writing database queries and updating document parameters via Mongo Shell.",
+      "mini_project": {
+        "title": "Inventory Shell Scripting",
+        "description": "Create a database collection for products, insert elements, run category updates, and clear obsolete stocks."
+      },
+      "milestone": "Mastered document schema concepts, basic search filters, nested structures updates, and deletion filters."
+    },
+    {
+      "phase_title": "Phase 2: Modeling Relationships & Indexes",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Data Modeling",
+          "subtopics": ["Embedded documents (Denormalization)", "Referenced documents (Normalization)", "One-to-Many and Many-to-Many models"]
+        },
+        {
+          "name": "Indexing & Performance",
+          "subtopics": ["Single field indexes", "Compound indexes", "Multikey indexes for arrays", "Using explain() to analyze queries"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily building complex indexes and measuring query speed improvements.",
+      "mini_project": {
+        "title": "User Profile & Post Database Model",
+        "description": "Establish collections for Users and Posts, configuring indexes on usernames and tags arrays for fast retrieval."
+      },
+      "milestone": "Proficient in designing document relations, generating compound indexes, and evaluating query search costs."
+    },
+    {
+      "phase_title": "Phase 3: Aggregation Framework & drivers",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Aggregation Pipelines",
+          "subtopics": ["$match and $project stages", "$group and accumulation operators ($sum, $avg)", "$unwind for array operations", "$lookup for collection joins"]
+        },
+        {
+          "name": "Database Drivers integration",
+          "subtopics": ["Node.js mongodb client", "Mongoose schema mappings", "Python pymongo integration"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing aggregate pipe groups and executing collections data maps.",
+      "mini_project": {
+        "title": "Sales Report Dashboard Engine",
+        "description": "Build an aggregation query that calculates total sales per store, filters dates range, sorts results, and averages values."
+      },
+      "milestone": "Capable of compiling multi-stage aggregation pipelines, unwinding data arrays, and connecting databases to backend scripts."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Social Network Database Architecture",
+      "description": "A schema structure detailing: users profiles, followers arrays, posts updates, compound indices, aggregation lookups, and security rules."
+    }
+  ]
+}

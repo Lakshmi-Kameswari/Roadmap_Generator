@@ -1,0 +1,114 @@
+{
+  "skill_name": "Node.js",
+  "estimated_duration": "3 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent backend developer with a deep understanding of Node.js event-driven architecture, file systems, writing RESTful Express APIs, and integrating databases.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Runtime & Core Modules",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Node Runtime & CLI",
+          "subtopics": ["V8 Engine & Event Loop", "Running scripts via CLI", "Global objects (process, __dirname, module)"]
+        },
+        {
+          "name": "Core Node Modules",
+          "subtopics": ["File System (fs/promises) operations", "Path module functions", "OS and Event Emitter utility"]
+        },
+        {
+          "name": "NPM and Package Files",
+          "subtopics": ["package.json configuration", "Dependency version control (^ vs ~)", "Custom script bindings"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily building command-line utilities and parsing local log files.",
+      "mini_project": {
+        "title": "CSV Parser Command Line Tool",
+        "description": "Create a command-line script that parses a directory of CSV files, sums transaction numbers, and outputs a formatted JSON summary."
+      },
+      "milestone": "Mastered running JavaScript outside browsers, calling file streams, and structuring Node.js projects with NPM packages."
+    },
+    {
+      "phase_title": "Phase 2: Express HTTP Web Server",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Express Routing Basics",
+          "subtopics": ["Server instantiation", "HTTP request methods (GET, POST, PUT, DELETE)", "Query strings vs Path params"]
+        },
+        {
+          "name": "Express Middleware Engine",
+          "subtopics": ["App-level middleware", "Router-level middleware", "Error handling middleware", "Static files serving"]
+        },
+        {
+          "name": "JSON API Contracts",
+          "subtopics": ["Parsing body parameters", "Formatting structured responses", "CORS policy resolution"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing RESTful routes and custom validation scripts.",
+      "mini_project": {
+        "title": "Recipe REST API",
+        "description": "Develop an API server for cookbook recipes containing filtering filters, ingredients listings, and error validation blocks."
+      },
+      "milestone": "Comfortable creating web servers, mapping route methods, injecting utility middlewares, and processing client payloads."
+    },
+    {
+      "phase_title": "Phase 3: Database Integrations",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Relational Integration (SQL)",
+          "subtopics": ["Connecting PostgreSQL / SQLite via pg client", "Creating table schemas and writing query statements"]
+        },
+        {
+          "name": "NoSQL integration (MongoDB)",
+          "subtopics": ["Mongoose driver installation", "Defining schemas and models", "Creating, retrieving, updating and deleting models"]
+        },
+        {
+          "name": "Environment Configs",
+          "subtopics": ["dotenv loading", "Configuring dev vs prod settings", "Configuring credentials securely"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily scripting database models and building CRUD endpoints.",
+      "mini_project": {
+        "title": "Expense Tracking Microservice",
+        "description": "Build an Express API that stores logs of transactions in MongoDB, calculates total balance, and filters transactions by category."
+      },
+      "milestone": "Equipped to interface backend servers with SQL or NoSQL databases and enforce validation limits on inputs."
+    },
+    {
+      "phase_title": "Phase 4: Security & Deployment",
+      "duration": "3 Weeks",
+      "topics": [
+        {
+          "name": "Authentication & Hashing",
+          "subtopics": ["Bcrypt hashing", "JWT generation and validation", "Bearer Auth authorization filters"]
+        },
+        {
+          "name": "API Testing",
+          "subtopics": ["Unit testing with Jest", "Supertest client mock calls"]
+        },
+        {
+          "name": "Deployment",
+          "subtopics": ["Dockerizing Node apps", "Hosting configurations on Render / VPS", "PM2 process manager"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily testing APIs, implementing auth middleware, and checking test coverage reports.",
+      "mini_project": {
+        "title": "Secure Blog API server",
+        "description": "Establish a secure blog database service containing roles management, post categories, user profile updates, and Jest integration checks."
+      },
+      "milestone": "Able to secure server routers, authorize tokens, write unit test scripts, and launch applications to cloud servers."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Real-time Chat Backend Server",
+      "description": "Create an Express backend server with WebSocket support via Socket.io allowing users to join chat rooms, send messages, and log history into a database."
+    },
+    {
+      "title": "File Storage and Streaming API Hub",
+      "description": "Build an API system that handles multi-part video uploads (Multer), streams video chunks back to clients (HTTP Range headers), and compresses uploads."
+    }
+  ]
+}

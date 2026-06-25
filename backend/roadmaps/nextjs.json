@@ -1,0 +1,106 @@
+{
+  "skill_name": "Next.js",
+  "estimated_duration": "2 Months",
+  "daily_study_time": "2 Hours",
+  "expected_outcome": "Competent Next.js developer with a deep understanding of Server Components, File-based routing, server-side data fetching strategies, and server actions implementation.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: App Router & Layout Structures",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "App Router Concepts",
+          "subtopics": ["Folder-based routing structure", "page.tsx and layout.tsx definitions", "Nesting navigation bars", "loading.tsx and error.tsx handlers"]
+        },
+        {
+          "name": "Server vs Client Components",
+          "subtopics": ["Default Server components advantages", "'use client' directive boundaries", "Interleaving server and client components"]
+        },
+        {
+          "name": "Static Metadata",
+          "subtopics": ["Adding titles & descriptions", "Dynamic metadata generation configurations"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily structuring route directories and mapping navigation structures.",
+      "mini_project": {
+        "title": "Blog Layout Directory",
+        "description": "Create a multi-folder blog structure with category paths, profile lists, custom loading boundaries, and headers."
+      },
+      "milestone": "Mastered Next.js folder-based routing, layout configurations, component separation, and SEO metadata hooks."
+    },
+    {
+      "phase_title": "Phase 2: Data Fetching & Caching",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Data Fetching Strategies",
+          "subtopics": ["Async Server Components fetching", "Server-Side Rendering (Dynamic fetching)", "Static Site Generation (Static fetching)", "Incremental Static Regeneration (Revalidation)"]
+        },
+        {
+          "name": "Caching Mechanisms",
+          "subtopics": ["Request memoization", "Data Cache controls", "Route Cache rules"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily calling API endpoints, configuring tags, and testing revalidation triggers.",
+      "mini_project": {
+        "title": "News Feed Aggregator",
+        "description": "A dashboard querying articles from a news database with custom static configurations revalidating every 60 seconds."
+      },
+      "milestone": "Proficient in fetch configurations, static vs dynamic outputs rendering, and caching mechanisms."
+    },
+    {
+      "phase_title": "Phase 3: Server Actions & Mutations",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Form Actions & Server Code",
+          "subtopics": ["'use server' declarations", "Handling form submissions on the server", "Validating input arguments (Zod)"]
+        },
+        {
+          "name": "State Hook Integrations",
+          "subtopics": ["useActionState / useFormState hooks", "useFormStatus pending loaders", "Optimistic state updates (useOptimistic)"]
+        },
+        {
+          "name": "Data Revalidation",
+          "subtopics": ["revalidatePath functions", "revalidateTag triggers"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing form handlers and testing server-side data mutations.",
+      "mini_project": {
+        "title": "Feedback Portal UI & Action",
+        "description": "Create an interactive feedback form page that writes reviews directly using Server Actions and updates the list."
+      },
+      "milestone": "Capable of handling data updates securely, updating page lists, and managing loading states."
+    },
+    {
+      "phase_title": "Phase 4: Middleware, Optimizations & Release",
+      "duration": "2 Weeks",
+      "topics": [
+        {
+          "name": "Next.js Middleware",
+          "subtopics": ["Interacting with requests and cookies", "Redirecting routes based on roles"]
+        },
+        {
+          "name": "Component Optimizations",
+          "subtopics": ["Next Image tags for responsive sizing", "Next Font bindings", "Next Script integrations"]
+        },
+        {
+          "name": "Production Deployment",
+          "subtopics": ["Build validation (next build)", "Hosting configurations on Vercel", "Self-hosting with Docker containers"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily checking page sizes, mapping redirect rules, and configuring deployments.",
+      "mini_project": {
+        "title": "Optimized Gallery Page",
+        "description": "A high-performance responsive media grid utilizing next/image blur placeholders, custom fonts, and middleware redirection rules."
+      },
+      "milestone": "Equipped to develop optimized, SEO-ready Next.js products and host them globally on serverless nodes."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Integrated Collaborative Markdown Platform",
+      "description": "Develop a serverless document editor with auth checks via middleware, database persistence in MongoDB, Server Actions updates, dynamic metadata pages, and static documentation guides."
+    }
+  ]
+}

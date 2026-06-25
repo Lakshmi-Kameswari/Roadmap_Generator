@@ -1,0 +1,74 @@
+{
+  "skill_name": "MySQL",
+  "estimated_duration": "4 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Competent MySQL database designer skilled in installing/configuring servers, writing stored procedures, optimizing queries, and managing user roles permissions.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Installation & Dialect Basics",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Server Setup & Workbench",
+          "subtopics": ["Installing MySQL Community Server", "MySQL Workbench GUI connection", "Command line client syntax"]
+        },
+        {
+          "name": "MySQL Data Types & Engine rules",
+          "subtopics": ["Numeric, String, and DateTime types", "Storage Engines: InnoDB vs MyISAM", "AUTO_INCREMENT configurations"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily interacting with local databases and creating tables.",
+      "mini_project": {
+        "title": "Contact Directory Database",
+        "description": "Create a database collection for user addresses with automatic registration timestamps and status checks."
+      },
+      "milestone": "Mastered MySQL server settings, Workbench operations, engine selection, and auto increment fields."
+    },
+    {
+      "phase_title": "Phase 2: Transactions & Views",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "ACID Transactions",
+          "subtopics": ["START TRANSACTION, COMMIT, ROLLBACK commands", "Savepoints definition", "Transaction Isolation levels"]
+        },
+        {
+          "name": "Database Views & Functions",
+          "subtopics": ["CREATE VIEW virtual tables", "Built-in string and math functions", "Handling Null values (IFNULL, COALESCE)"]
+        }
+      ],
+      "practice_schedule": "1.5 Hours daily writing transaction commits and creating dynamic database views.",
+      "mini_project": {
+        "title": "Bank Transfer Transaction Script",
+        "description": "Write a transaction workflow that deducts balances from one account, updates recipients, and rollbacks on errors."
+      },
+      "milestone": "Proficient in database transaction management, isolation configurations, and compiling database views."
+    },
+    {
+      "phase_title": "Phase 3: Stored Procedures & Administration",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Stored Procedures & Triggers",
+          "subtopics": ["Declaring stored procedures with arguments", "CREATE TRIGGER hooks", "IF-ELSE loops inside procedures"]
+        },
+        {
+          "name": "Database Administration",
+          "subtopics": ["Creating users (CREATE USER)", "Granting privileges (GRANT SELECT, INSERT)", "Backing up databases (mysqldump)"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing triggers, procedures, and backup schedules.",
+      "mini_project": {
+        "title": "Stock Alert Trigger System",
+        "description": "Establish a stock management system that automatically fires triggers to log alerts when item quantities drop below thresholds."
+      },
+      "milestone": "Capable of automating workflows via triggers, locking databases down via users permissions, and export database files."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Online Billing Database Architecture",
+      "description": "Develop a multi-table database mapping bills, transactions logs, user audits triggers, stored invoicing procedures, and database users permissions configurations."
+    }
+  ]
+}

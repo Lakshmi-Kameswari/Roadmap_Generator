@@ -1,0 +1,134 @@
+{
+  "skill_name": "Java Full Stack",
+  "estimated_duration": "6 Months",
+  "daily_study_time": "3 Hours",
+  "expected_outcome": "Professional full-stack engineer capable of designing database schemas, writing backend microservices with Spring Boot, building responsive frontends with React, and deploying the integration securely.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Java Foundations & OOP",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Java Core Syntax",
+          "subtopics": ["Primitives vs Reference variables", "Control loops", "Method definitions", "Scanners input"]
+        },
+        {
+          "name": "Object-Oriented Programming",
+          "subtopics": ["Inheritance structures", "Polymorphism methods", "Interfaces definition", "Encapsulation properties"]
+        },
+        {
+          "name": "Collections & Exceptions",
+          "subtopics": ["ArrayList, HashMap, HashSet", "Checked and Unchecked Exception handling", "Custom Exception declarations"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing algorithms, using collections, and managing exceptions in terminal applications.",
+      "mini_project": {
+        "title": "Console Bank System",
+        "description": "Create an OOP account transaction system featuring deposit, withdrawal, interest rates, and custom transaction log logs."
+      },
+      "milestone": "Strong command of core Java OOP designs, exceptions management, and list datatypes."
+    },
+    {
+      "phase_title": "Phase 2: Database and JDBC integrations",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Relational Databases & SQL",
+          "subtopics": ["SQL queries (SELECT, INSERT, UPDATE, DELETE)", "Table design rules (Keys, relationships)", "Joins and subqueries"]
+        },
+        {
+          "name": "Java Database Connectivity (JDBC)",
+          "subtopics": ["DriverManager setups", "PreparedStatements", "ResultSets manipulation", "Connection Pools basics"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily executing SQL operations and querying tables through JDBC interfaces.",
+      "mini_project": {
+        "title": "Inventory Management system",
+        "description": "Write a console app connected to MySQL that loads, updates, and tracks inventory stock with error safety."
+      },
+      "milestone": "Mastered relational table structures, data mappings, and interfacing Java with SQL databases."
+    },
+    {
+      "phase_title": "Phase 3: Spring Boot Backend API Development",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Spring Framework Principles",
+          "subtopics": ["Inversion of Control (IoC)", "Dependency Injection (DI)", "Spring Bean annotations"]
+        },
+        {
+          "name": "REST APIs with Spring Boot",
+          "subtopics": ["@RestController controllers", "Request mappings (@GetMapping, @PostMapping)", "Response entity configurations"]
+        },
+        {
+          "name": "Spring Data JPA & Hibernate",
+          "subtopics": ["Entities definition", "CrudRepository / JpaRepository", "Relationships (@OneToMany, @ManyToOne)", "H2 and PostgreSQL setup"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily building REST microservices and modeling entity relationships.",
+      "mini_project": {
+        "title": "Customer Relationship REST API",
+        "description": "Establish a Spring Boot backend API database that handles customer queries, orders trackers, and logs statistics."
+      },
+      "milestone": "Proficient in writing Spring Boot REST endpoints, querying databases via Spring Data JPA, and managing configuration files."
+    },
+    {
+      "phase_title": "Phase 4: Frontend Development with React",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Modern JavaScript & React Core",
+          "subtopics": ["Vite setups", "JSX components rendering", "useState and useEffect loops"]
+        },
+        {
+          "name": "Networking Fetch Client",
+          "subtopics": ["Integrating frontend with Java backend REST ports", "Managing state, load signals, and fetch error codes"]
+        },
+        {
+          "name": "Tailwind CSS Styling",
+          "subtopics": ["Responsive grids", "Interactive modals", "Dark theme classes configurations"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily connecting React dashboards to local Spring Boot endpoint APIs.",
+      "mini_project": {
+        "title": "Issue Tracking Dashboard UI",
+        "description": "Create a visual tracker grid displaying issues from a backend database with category tags and assign status updates."
+      },
+      "milestone": "Capable of building responsive React user interfaces, handling routes, and fetching data from backend REST APIs."
+    },
+    {
+      "phase_title": "Phase 5: Secure integrations & Deployment",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Spring Security & Auth",
+          "subtopics": ["JWT filters configuration", "Encrypting user passwords", "Role authorizations"]
+        },
+        {
+          "name": "Testing and Packaging",
+          "subtopics": ["JUnit backend test cases", "Building production assets (JARs, React builds)"]
+        },
+        {
+          "name": "Deployment Containerization",
+          "subtopics": ["Writing Dockerfiles", "Deploying with Docker Compose", "Cloud environment setup"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily securing web controllers, writing tests, and configuring container services.",
+      "mini_project": {
+        "title": "Secured E-Commerce Platform API & UI",
+        "description": "Develop a full-stack integrated application with login/registration (JWT), product catalog search, and checkout capabilities."
+      },
+      "milestone": "Completed Full Stack developer capable of building secure, robust, and containerized Spring Boot + React applications."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Enterprise Employee Management Dashboard",
+      "description": "A complex dashboard featuring JWT auth, role-based controls (Admin/User), database backups, department statistics graphs, export capabilities, and a slick React dashboard."
+    },
+    {
+      "title": "Hospital Booking & Consultation System",
+      "description": "Build an integrated booking system mapping Doctor schedules, Patient records, Appointment slots via Spring JPA, interactive calendars in React, and email alerts."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "skill_name": "DevOps",
+  "estimated_duration": "6 Months",
+  "daily_study_time": "3 Hours",
+  "expected_outcome": "Competent DevOps Engineer capable of setting up robust CI/CD pipelines, containerizing applications, writing Infrastructure-as-code scripts, and managing cloud deployments.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Linux, Shell & Git Administration",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Linux Operating System & Administration",
+          "subtopics": ["File System and Hierarchy", "Permissions and Ownership", "SSH Keys & Configuration", "Systemd Services & Process Management"]
+        },
+        {
+          "name": "Shell Scripting",
+          "subtopics": ["Variables & Conditionals in Bash", "Loops and Functions", "Automating Cron Jobs", "Error Handling and Exit Codes"]
+        },
+        {
+          "name": "Advanced Git & GitOps Basics",
+          "subtopics": ["Branching strategies (GitFlow)", "Rebasing & Cherry-picking", "Git hooks for pre-commit checks", "GitHub Actions introduction"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing shell utilities, writing pre-commit hooks, and managing system services.",
+      "mini_project": {
+        "title": "Log Rotator & Automated Backup Script",
+        "description": "Write a bash script that compresses application logs older than 7 days, uploads them to local backup storage, and sends a slack notification upon success."
+      },
+      "milestone": "Mastered intermediate Linux administration, Bash automation, and advanced version control practices."
+    },
+    {
+      "phase_title": "Phase 2: CI/CD Pipelines & Build Tools",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Build Automation",
+          "subtopics": ["Package management (npm, pip, maven)", "Compiling and packaging code bases"]
+        },
+        {
+          "name": "CI/CD Server Setup (GitHub Actions / Jenkins)",
+          "subtopics": ["Runners and Agents", "YAML workflows and Pipelines", "Environment variables & Secrets management"]
+        },
+        {
+          "name": "Quality & Security Gates",
+          "subtopics": ["Static Code Analysis (SonarQube)", "Dependency Scanning (Trivy)", "Unit and Integration test triggers"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily building workflows that automatically compile, run tests, and check code quality on code push.",
+      "mini_project": {
+        "title": "GitHub Actions Multi-stage CI/CD",
+        "description": "Create a GitHub Actions pipeline that triggers on code pushes, installs dependencies, runs linters & unit tests, performs security scans, and reports results."
+      },
+      "milestone": "Proficient in setting up continuous integration workflows with comprehensive test validation and scanning."
+    },
+    {
+      "phase_title": "Phase 3: Containerization & Orchestration",
+      "duration": "8 Weeks",
+      "topics": [
+        {
+          "name": "Docker Containerization",
+          "subtopics": ["Writing efficient Dockerfiles", "Docker Compose for multi-container apps", "Network and Volumes", "Container security & image size optimization"]
+        },
+        {
+          "name": "Kubernetes Architecture & Core Concepts",
+          "subtopics": ["Pods, Deployments & Services", "ConfigMaps & Secrets", "Ingress Controllers & Routing", "Volumes and Persistent Storage"]
+        },
+        {
+          "name": "Helm Package Manager",
+          "subtopics": ["Helm Chart structure", "Templating Kubernetes resources", "Managing releases"]
+        }
+      ],
+      "practice_schedule": "3 Hours daily writing Docker configurations and deploying applications onto local Kubernetes clusters (Minikube / Kind).",
+      "mini_project": {
+        "title": "Containerized Microservices on Kubernetes",
+        "description": "Create a multi-container application (React + FastAPI + PostgreSQL), configure it using Docker Compose, write K8s YAML manifest deployments, and route external traffic using Ingress."
+      },
+      "milestone": "Capable of packaging any software stack into secure containers and deploying/orchestrating them in Kubernetes."
+    },
+    {
+      "phase_title": "Phase 4: Infrastructure as Code (IaC) & Monitoring",
+      "duration": "7 Weeks",
+      "topics": [
+        {
+          "name": "Terraform Infrastructure Provisioning",
+          "subtopics": ["Providers & Resources", "Terraform State management", "Modules for reusability", "Variables and Outputs"]
+        },
+        {
+          "name": "Configuration Management (Ansible)",
+          "subtopics": ["Playbooks & Tasks", "Inventory files", "Ansible Roles and Templates"]
+        },
+        {
+          "name": "Monitoring & Observability",
+          "subtopics": ["Prometheus for metrics gathering", "Grafana for dashboard charts", "Log aggregation with Loki / ELK Stack"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily scripting infrastructure resources on local providers or cloud platforms, and setting up Grafana dashboards.",
+      "mini_project": {
+        "title": "Automated AWS Server Configuration via IaC",
+        "description": "Write Terraform code to spin up a server instance, and an Ansible playbook to configure Docker, deploy an app, and set up Prometheus metrics collector on it."
+      },
+      "milestone": "Mastered declarative infrastructure management, system configuration templates, and comprehensive metric dashboards."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Complete GitOps Kubernetes Deployment Pipeline",
+      "description": "Establish a production-ready system where developers push code to GitHub, triggering CI tests, building an optimized Docker image, scanning with Trivy, publishing to a registry, and automatically deploying to a Kubernetes cluster using ArgoCD GitOps operator."
+    },
+    {
+      "title": "High Availability Cloud Infrastructure on AWS",
+      "description": "Implement Terraform script to deploy a VPC with public/private subnets, an Application Load Balancer, an Auto Scaling Group of instances running Docker, an RDS database, configure CloudWatch metrics, and deploy Grafana for dashboards."
+    }
+  ]
+}

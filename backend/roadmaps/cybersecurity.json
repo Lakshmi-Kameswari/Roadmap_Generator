@@ -1,0 +1,114 @@
+{
+  "skill_name": "Cyber Security",
+  "estimated_duration": "6 Months",
+  "daily_study_time": "3 Hours",
+  "expected_outcome": "Knowledgeable Cyber Security professional capable of performing vulnerability assessments, identifying security risks, parsing logs, and understanding offensive and defensive security strategies.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Networking & Operating Systems Foundations",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Computer Networking",
+          "subtopics": ["TCP/IP & OSI Model", "IP Addressing & Subnetting", "DNS, DHCP, HTTP/S, SSH, FTP", "Routing & Switching basics"]
+        },
+        {
+          "name": "Linux Command Line",
+          "subtopics": ["File System Navigation", "User & Group Permissions", "Bash Scripting basics", "Process management & Log inspection"]
+        },
+        {
+          "name": "Windows Administration",
+          "subtopics": ["Active Directory basics", "PowerShell commands", "Registry configurations"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily practicing Linux commands, configuring virtual networks, and analyzing packet captures in Wireshark.",
+      "mini_project": {
+        "title": "Network Packet Analyzer",
+        "description": "Capture local network traffic using Wireshark, analyze handshakes (TCP/TLS), and write a Bash script to parse and extract unique IPs from system logs."
+      },
+      "milestone": "Strong comprehension of networking protocols, command-line operations, and operating system configurations."
+    },
+    {
+      "phase_title": "Phase 2: Security Foundations & Cryptography",
+      "duration": "4 Weeks",
+      "topics": [
+        {
+          "name": "Security Principles",
+          "subtopics": ["CIA Triad (Confidentiality, Integrity, Availability)", "AAA Framework (Authentication, Authorization, Accounting)", "Threat Modeling & Risk Assessments"]
+        },
+        {
+          "name": "Cryptography basics",
+          "subtopics": ["Symmetric vs Asymmetric Encryption", "Hashing Algorithms (MD5, SHA-256)", "Digital Signatures & Certificates", "Public Key Infrastructure (PKI) & TLS"]
+        },
+        {
+          "name": "Access Control Mechanisms",
+          "subtopics": ["RBAC & ABAC", "Multi-Factor Authentication (MFA)", "SSO & SAML/OAuth"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily setting up encryption tools, verifying checksums, and building user access policies.",
+      "mini_project": {
+        "title": "File Integrity Checker",
+        "description": "Develop a Python or Bash tool that hashes files in a directory, monitors changes, and alerts when files are modified, showing cryptographic differences."
+      },
+      "milestone": "Mastered basic authentication frameworks, threat models, and cryptographic implementations."
+    },
+    {
+      "phase_title": "Phase 3: Offensive Security & Pentesting",
+      "duration": "8 Weeks",
+      "topics": [
+        {
+          "name": "Information Gathering & Scanning",
+          "subtopics": ["Reconnaissance (Passive & Active)", "Nmap for Port Scanning & OS Detection", "Shodan and OSINT search"]
+        },
+        {
+          "name": "System & Web Pentesting",
+          "subtopics": ["Metasploit Framework", "OWASP Top 10 vulnerabilities (SQL Injection, XSS, CSRF)", "Burp Suite for intercepting traffic"]
+        },
+        {
+          "name": "Privilege Escalation",
+          "subtopics": ["SUID files in Linux", "Windows DLL hijacking basics", "Post-exploitation strategies"]
+        }
+      ],
+      "practice_schedule": "3 Hours daily running scans, exploiting vulnerabilities in isolated test rigs (e.g. TryHackMe, HackTheBox).",
+      "mini_project": {
+        "title": "Vulnerability Assessment Report",
+        "description": "Set up a vulnerable virtual machine, scan it for vulnerabilities, write an exploit proof-of-concept, and author a professional remediation report."
+      },
+      "milestone": "Familiar with offensive methodology, vulnerability scoring (CVSS), and automated scanning frameworks."
+    },
+    {
+      "phase_title": "Phase 4: Defensive Security & Incident Response",
+      "duration": "6 Weeks",
+      "topics": [
+        {
+          "name": "Security Monitoring & SIEM",
+          "subtopics": ["Splunk or ELK Stack basics", "Writing alert rules", "Analyzing firewall logs"]
+        },
+        {
+          "name": "Firewalls & Endpoint Security",
+          "subtopics": ["IDS/IPS systems (Snort, Suricata)", "Anti-Malware & EDR technologies", "Network segmentation policies"]
+        },
+        {
+          "name": "Incident Response & Forensics",
+          "subtopics": ["Incident Response Lifecycle", "Memory & Disk analysis tools (Volatility, Autopsy)", "Phishing investigation workflows"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily analyzing cyber threat logs, configuring local firewall rules, and simulating investigations.",
+      "mini_project": {
+        "title": "SIEM Dashboard Setup & Log Analysis",
+        "description": "Set up a centralized log dashboard using Wazuh or Elastic, trigger security events on a client machine, and create alerts for unauthorized access."
+      },
+      "milestone": "Proficient in security operations, threat hunting, parsing event logs, and reporting containment procedures."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Enterprise Security Hardening Blueprint",
+      "description": "Conduct a security audit of a simulated web architecture, implement firewall configurations, block OWASP Top 10 attacks using a WAF (ModSecurity), enforce TLS 1.3, and write custom Snort IDS detection rules."
+    },
+    {
+      "title": "Digital Forensics & Malware Analysis Report",
+      "description": "Analyze a compromised memory dump and disk image using Volatility and Autopsy to identify the malicious process, determine the entry point, analyze the malware hash characteristics, and map to MITRE ATT&CK techniques."
+    }
+  ]
+}

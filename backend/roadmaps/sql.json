@@ -1,0 +1,78 @@
+{
+  "skill_name": "SQL",
+  "estimated_duration": "4 Weeks",
+  "daily_study_time": "1.5 Hours",
+  "expected_outcome": "Competent SQL writer capable of structuring relational database schemas, writing complex JOIN operations, compiling aggregates, and optimizing search indexes.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Basic Queries & Filtering",
+      "duration": "1 Week",
+      "topics": [
+        {
+          "name": "Databases & Tables DDL",
+          "subtopics": ["CREATE DATABASE and CREATE TABLE", "Primary Keys and Foreign Keys constraints", "Alter table and column data types"]
+        },
+        {
+          "name": "Selecting & Filtering Data",
+          "subtopics": ["SELECT and SELECT DISTINCT statements", "WHERE clause filtering and Operators (AND, OR, NOT)", "LIKE wildcard searches, IN and BETWEEN filters", "ORDER BY sorting"]
+        }
+      ],
+      "practice_schedule": "1 Hour daily writing SELECT statements and database table definitions.",
+      "mini_project": {
+        "title": "Store Database Schema outline",
+        "description": "Design tables for Customers, Products, and Orders with correct primary and foreign key constraints."
+      },
+      "milestone": "Mastered basic database table creations, data types definitions, and row filtering syntax."
+    },
+    {
+      "phase_title": "Phase 2: JOINS & Aggregations",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "JOIN operations",
+          "subtopics": ["INNER JOIN and OUTER JOIN (LEFT, RIGHT, FULL)", "Self joins and Union operators", "Alias mappings (AS)"]
+        },
+        {
+          "name": "Aggregations & Grouping",
+          "subtopics": ["Aggregate functions (COUNT, SUM, AVG, MIN, MAX)", "GROUP BY aggregation", "HAVING filter clauses"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing joins across multiple tables and aggregating results.",
+      "mini_project": {
+        "title": "Business Performance Reports",
+        "description": "Write a report summarizing sales metrics: total revenue per product, customer transaction totals, and averages."
+      },
+      "milestone": "Proficient in joining relational datasets, grouping data elements, and applying summary aggregates."
+    },
+    {
+      "phase_title": "Phase 3: Subqueries, Window Functions & Indexes",
+      "duration": "1.5 Weeks",
+      "topics": [
+        {
+          "name": "Subqueries & CTEs",
+          "subtopics": ["Nested queries in SELECT, WHERE", "Common Table Expressions (WITH syntax)", "Exists and In checks"]
+        },
+        {
+          "name": "Window Functions",
+          "subtopics": ["ROW_NUMBER() and RANK()", "PARTITION BY partitions", "Lead and Lag variables"]
+        },
+        {
+          "name": "Optimization",
+          "subtopics": ["Indexes creations (CREATE INDEX)", "Explain plans logs analysis"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing analytical window scripts and creating indexes.",
+      "mini_project": {
+        "title": "Employee Ranking Dashboard Query",
+        "description": "Write a complex CTE query that ranks employee salaries per department, maps managers names, and flags anomalies."
+      },
+      "milestone": "Equipped to resolve complex data analytics structures, write nested operations, and improve search performances."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "E-Commerce Transaction Audit System",
+      "description": "Design an audit database mapping orders history, billing addresses, discounts, and payments logs, complete with optimized indexes and analytical queries."
+    }
+  ]
+}

@@ -2,61 +2,43 @@ import React from 'react';
 
 export const SkeletonLoader: React.FC = () => {
   return (
-    <div className="loading-skeleton-wrapper animate-fade-in">
-      {/* Banner Skeleton */}
-      <div className="skeleton-title-card">
-        <div className="skeleton-pulse skeleton-h1"></div>
-        <div className="skeleton-pulse skeleton-p"></div>
-        <div className="skeleton-pulse skeleton-p" style={{ width: '60%' }}></div>
-        <div style={{ display: 'flex', gap: '15px', marginTop: '10px' }}>
-          <div className="skeleton-pulse skeleton-meta" style={{ width: '120px', height: '35px' }}></div>
-          <div className="skeleton-pulse skeleton-meta" style={{ width: '120px', height: '35px' }}></div>
-        </div>
+    <div className="w-full max-w-4xl mx-auto space-y-8 animate-pulse px-4 py-8">
+      {/* Title skeleton */}
+      <div className="h-10 bg-slate-200 dark:bg-slate-800 rounded-lg w-1/3 mb-4"></div>
+      
+      {/* Meta grid skeleton */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="h-24 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+        <div className="h-24 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+        <div className="h-24 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
       </div>
 
-      {/* Progress Bar Skeleton */}
-      <div className="skeleton-title-card" style={{ padding: '1.25rem', marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-          <div className="skeleton-pulse" style={{ height: '18px', width: '200px' }}></div>
-          <div className="skeleton-pulse" style={{ height: '18px', width: '60px' }}></div>
-        </div>
-        <div className="skeleton-pulse" style={{ height: '10px', width: '100%', borderRadius: '999px' }}></div>
-      </div>
+      {/* Outcome box skeleton */}
+      <div className="h-32 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
 
-      {/* Split Grid Skeleton */}
-      <div className="skeleton-grid">
-        {/* Sidebar Nav */}
-        <div className="skeleton-sidebar">
-          <div className="skeleton-pulse" style={{ height: '16px', width: '100px', marginBottom: '10px', marginLeft: '4px' }}></div>
-          <div className="skeleton-pulse skeleton-nav-item"></div>
-          <div className="skeleton-pulse skeleton-nav-item"></div>
-          <div className="skeleton-pulse skeleton-nav-item"></div>
-          <div className="skeleton-pulse skeleton-card" style={{ height: '120px', marginTop: '15px' }}></div>
-        </div>
-
-        {/* Content Pane */}
-        <div className="skeleton-content-panel">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-            <div className="skeleton-pulse" style={{ height: '22px', width: '80px', borderRadius: '6px' }}></div>
-            <div className="skeleton-pulse skeleton-h2"></div>
-          </div>
-          <div className="skeleton-pulse" style={{ height: '35px', width: '100%', borderRadius: '8px' }}></div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '10px' }}>
-            <div className="skeleton-pulse" style={{ height: '16px', width: '180px' }}></div>
-            <div className="skeleton-pulse skeleton-nav-item" style={{ height: '50px' }}></div>
-            <div className="skeleton-pulse skeleton-nav-item" style={{ height: '50px' }}></div>
-            <div className="skeleton-pulse skeleton-nav-item" style={{ height: '50px' }}></div>
-          </div>
-
-          <div style={{ marginTop: '15px' }}>
-            <div className="skeleton-pulse" style={{ height: '18px', width: '150px', marginBottom: '12px' }}></div>
-            <div style={{ display: 'flex', gap: '15px' }}>
-              <div className="skeleton-pulse skeleton-card" style={{ flex: 1 }}></div>
-              <div className="skeleton-pulse skeleton-card" style={{ flex: 1 }}></div>
+      {/* Timeline skeleton */}
+      <div className="relative border-l-2 border-slate-200 dark:border-slate-800 pl-8 space-y-12">
+        {[1, 2, 3].map((item) => (
+          <div key={item} className="relative">
+            {/* Timeline Dot */}
+            <div className="absolute -left-[41px] top-1 w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-800 border-4 border-slate-50 dark:border-slate-950"></div>
+            
+            {/* Phase details */}
+            <div className="space-y-4">
+              <div className="h-6 bg-slate-200 dark:bg-slate-800 rounded-lg w-1/4"></div>
+              <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded-lg w-1/6"></div>
+              
+              <div className="p-6 bg-slate-100 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-800/50 rounded-2xl space-y-4">
+                <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/3"></div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-3/4"></div>
+                  <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3"></div>
+                </div>
+                <div className="h-10 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

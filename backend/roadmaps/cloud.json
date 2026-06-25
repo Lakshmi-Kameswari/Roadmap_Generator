@@ -1,0 +1,110 @@
+{
+  "skill_name": "Cloud Computing",
+  "estimated_duration": "5 Months",
+  "daily_study_time": "2.5 Hours",
+  "expected_outcome": "Competent Cloud Engineer with skills in designing scalable cloud architectures, managing serverless architectures, deploying container applications, and managing cloud security rules.",
+  "phases": [
+    {
+      "phase_title": "Phase 1: Cloud Concepts & Compute Services",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Cloud Computing Fundamentals",
+          "subtopics": ["IaaS vs PaaS vs SaaS", "Public, Private, and Hybrid models", "Shared Responsibility Security Model"]
+        },
+        {
+          "name": "Compute Services (AWS EC2 / Azure VMs)",
+          "subtopics": ["Virtual Machine Provisioning", "Instance Types and Purchasing options", "Storage: Block (EBS) vs Object (S3)", "Security Groups & Firewall rules"]
+        },
+        {
+          "name": "Object Storage & Databases",
+          "subtopics": ["AWS S3 / Azure Blob Storage basics", "Relational Databases (RDS) in the cloud", "NoSQL cloud offerings (DynamoDB/CosmosDB)"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily setting up EC2 instances, mounting storage, and uploading data to S3 via CLI tools.",
+      "mini_project": {
+        "title": "Cloud Host Portfolio Site",
+        "description": "Host a static web portfolio on a secure bucket (S3) with SSL and route traffic through a custom domain mapping, and launch an EC2 instance to serve an API backend."
+      },
+      "milestone": "Mastered basic compute provisioning, virtual disks, permission profiles, and cloud object hosting."
+    },
+    {
+      "phase_title": "Phase 2: Networking, IAM & Scalability",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Virtual Networking (VPC)",
+          "subtopics": ["Subnets (Public and Private)", "Internet Gateways & NAT Gateways", "Route Tables & Network Access Control Lists (NACLs)", "VPC Peering basics"]
+        },
+        {
+          "name": "Identity & Access Management (IAM)",
+          "subtopics": ["Users, Groups, & Roles", "Writing custom IAM policies", "MFA and CLI access permissions"]
+        },
+        {
+          "name": "High Availability & Scaling",
+          "subtopics": ["Load Balancers (ALB/NLB)", "Auto Scaling Groups (ASG)", "Health Checks and scaling policies"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily configuring subnets, network routes, setting up load balancers, and testing scale-out triggers.",
+      "mini_project": {
+        "title": "High-Availability Web Server Stack",
+        "description": "Configure a secure VPC, deploy dual web servers in private subnets, place an Application Load Balancer in public subnets, and configure auto-scaling based on CPU load."
+      },
+      "milestone": "Proficient in cloud network designs, access configurations, and scaling systems dynamically."
+    },
+    {
+      "phase_title": "Phase 3: Serverless & Container Deployment",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Serverless Architectures",
+          "subtopics": ["AWS Lambda / Azure Functions", "API Gateway integrations", "Event-driven architecture triggers", "Serverless database bindings"]
+        },
+        {
+          "name": "Container Services in Cloud",
+          "subtopics": ["Elastic Container Registry (ECR)", "AWS ECS & Fargate for serverless containers", "Managed Kubernetes (AWS EKS) fundamentals"]
+        }
+      ],
+      "practice_schedule": "2.5 Hours daily writing serverless handler functions and pushing Docker containers to cloud services.",
+      "mini_project": {
+        "title": "Serverless Emailing Microservice",
+        "description": "Create an API endpoint via API Gateway that triggers an AWS Lambda function, processes input details, and sends an email via Amazon SES."
+      },
+      "milestone": "Capable of deploying applications without managing servers using functions-as-a-service and serverless container runners."
+    },
+    {
+      "phase_title": "Phase 4: Cloud Monitoring, Security & Cost Control",
+      "duration": "5 Weeks",
+      "topics": [
+        {
+          "name": "Monitoring & Alerting",
+          "subtopics": ["CloudWatch metrics and alarms", "CloudTrail logs auditing", "Setting up billing budget alerts"]
+        },
+        {
+          "name": "Cloud Security Best Practices",
+          "subtopics": ["Encryption at Rest (KMS keys)", "Encryption in Transit (SSL/TLS certificates)", "Secrets Manager for credentials caching"]
+        },
+        {
+          "name": "Infrastructure as Code (IaC) basics",
+          "subtopics": ["AWS CloudFormation introduction", "Terraform for multi-cloud deployments"]
+        }
+      ],
+      "practice_schedule": "2 Hours daily writing infrastructure scripts and configuring dashboard charts and alarms.",
+      "mini_project": {
+        "title": "Terraform Infrastructure Audit Suite",
+        "description": "Write a Terraform template to construct a secure environment (VPC, RDS instance, IAM role) and configure CloudWatch metrics alarms for disk usage."
+      },
+      "milestone": "Equipped to enforce security policies, keep budgets optimized, and audit deployment events."
+    }
+  ],
+  "major_projects": [
+    {
+      "title": "Serverless Image Processing Platform",
+      "description": "An application where users upload raw images to a bucket, triggering a Serverless Function that auto-compresses them, generates thumbnails, saves metadata to DynamoDB, and sends a notification email via SNS."
+    },
+    {
+      "title": "Multi-Tier Container App Migration with IaC",
+      "description": "Script the entire cloud infrastructure using Terraform to run a containerized Node/Express database application on AWS Fargate behind a Load Balancer, complete with RDS database persistence, SSL/TLS certificates, and CloudWatch metrics dashboard."
+    }
+  ]
+}
