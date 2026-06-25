@@ -1,4 +1,4 @@
-const API_URL = 'https://roadmap-generator-029w.onrender.com';
+const API_URL = 'https://roadmap-generator-bjlo.onrender.com';
 export interface Skill {
   id: string;
   name: string;
