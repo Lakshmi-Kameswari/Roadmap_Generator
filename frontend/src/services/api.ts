@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://roadmap-generator-029w.onrender.com';
 
 export interface Skill {
   id: string;
